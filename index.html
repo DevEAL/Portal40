@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Portal 40</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Red+Hat+Display&display=swap" rel="stylesheet">
+  <link href="css/estilo.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+</head>
+<body>
+	<!-- Cuerpo Web -->
+  <div id="app">
+    <!-- Inicio Cabecera -->
+
+		<v-app>
+      <Cabecera></Cabecera>
+		<!-- Fin Cabecera -->
+
+		<!-- Inicio Contenido -->
+
+		<v-content>
+			<v-container fluid class="black">
+			<Carousels></Carousels>
+			<v-btn
+						color="#34bf49"
+						dark
+						x-large
+						absolute
+						top
+						left
+						fab
+						class="display-2 btn_floating"
+					>
+						<i class="fab fa-whatsapp"></i>
+					</v-btn>
+			<!-- Seccion cambiante -->
+
+				<router-view>
+				</router-view>
+
+			<!-- Seccion cambiante -->
+			</v-container>
+		</v-content>
+		<!-- Fin Contenido -->
+		</v-app>
+  </div>
+	<!-- Fin Cuerpo Web-->
+
+	<!-- Comienzo Inicio -->
+
+	<template id="index">
+		<div>
+			<Inicio></Inicio>
+			<Formulario></Formulario>
+			<Footer40></Footer40>
+		</div>
+	</template>
+
+	<!-- Fin Inicio -->
+
+	<!-- Inicio Modelo de Negocio -->
+
+	<template id="modelo">
+		<div>
+			<Modelo></Modelo>
+			<Formulario></Formulario>
+			<Footer40></Footer40>
+		</div>
+	</template>
+
+	<!-- Fin Modelo de Negocio -->
+
+	<!-- Inicio Apartamento -->
+
+	<template id="apartamento">
+		<div>
+			<Apartamento></Apartamento>
+			<Formulario></Formulario>
+			<Footer40></Footer40>
+		</div>
+	</template>
+
+	<!-- Fin Apartamento -->
+
+	<!-- Inicio Edificio -->
+
+	<template id="edificio">
+		<div>
+			<Edificio></Edificio>
+			<Formulario></Formulario>
+			<Footer40></Footer40>
+		</div>
+	</template>
+
+	<!-- Fin Edificio -->
+
+	<!-- Inicio contacto -->
+
+	<template id="contacto">
+		<div>
+			<v-row>
+				<v-col cols="12" class="color_fondo text-center white--text letra_Hat letraTituloC">
+					<v-container>
+						<p>COMPRA PORTAL 40 Y COMPRA 5 NEGOCIOS EN UNO</p>
+					</v-container>
+				</v-col>
+				<v-col cols="12" class="white text-center white--text">
+					<Contacto></Contacto>
+				</v-col>
+				<v-col cols="12" class="formulario">
+					<Formulario></Formulario>
+				</v-col>
+				<v-col cols="12">
+					<Footer40></Footer40>
+				</v-col>
+			</v-row>
+		</div>
+	</template>
+
+	<!-- Fin contacto -->
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+	<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+	<script src="js/components/Inicio.js"></script>
+	<script src="js/components/Modelo.js"></script>
+	<script src="js/components/Cabecera.js"></script>
+	<script src="js/components/Apartamento.js"></script>
+	<script src="js/components/Edificio.js"></script>
+	<script src="js/components/Contacto.js"></script>
+	<script src="js/components/Carousels.js"></script>
+	<script src="js/components/Formulario.js"></script>
+	<script src="js/components/Footer.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

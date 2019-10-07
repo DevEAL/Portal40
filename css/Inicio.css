@@ -1,0 +1,68 @@
+.tamano_h {
+  font-size: 60px;
+}
+.negrilla{
+  font-weight: bold;
+}
+.tamano-t{
+  font-size: 35px;
+  text-align: center;
+}
+.tamano-t1{
+  font-size: 48px;
+}
+.tamaño_formulario{
+  font-size: 25pt;
+  font-weight: bold;
+}
+.btn_floating{
+  margin-top: 25%;
+  margin-left: 3%;
+}
+.letra_menu{
+  font-size: 17pt;
+}
+.headPortal{
+  padding-top: 6px;
+}
+@media (max-width: 1300px) {
+  .btn_floating{
+    margin-top: 40%;
+    margin-left: 3%;
+  }
+  .headPortal{
+    padding-top: 12px;
+  }
+  .v-btn--fab.v-size--x-large.v-btn--absolute.v-btn--top {
+    top: 110px;
+  }
+}
+@media (max-width: 800px) {
+  .tamano_h {
+    font-size: 20pt;
+  }
+  .negrilla{
+    font-weight: bold;
+  }
+  .tamano-t{
+    font-size: 16pt;
+    text-align: justify !important;
+  }
+  .tamano-t1{
+    font-size: 26pt;
+  }
+  .tamaño_formulario{
+    font-size: 30pt;
+  }
+  .margen {
+    margin: 0px;
+    padding: 0px;
+  }
+  .btn_floating{
+    margin-top: 100%;
+    margin-left: 3%;
+  }
+  .v-application .py-10 {
+    padding: 0px 0px !important;
+  }
+}

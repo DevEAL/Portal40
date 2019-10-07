@@ -1,0 +1,52 @@
+.letratituloA {
+    font-size: 35pt;
+}
+.letratituloA2{
+    font-size: 70pt;
+    font-weight: bold;
+}
+.letratituloA3{
+    font-size: 25pt;
+    font-weight: bold;
+}
+.lista{
+    list-style-image: url("http://localhost:8080/Portal40/img/Asset1.svg");
+    margin:60px;
+}
+
+.lista li {
+    text-align: justify;
+    justify-content: flex-start;
+    font-size: 18pt;
+}
+
+.letraTituloIconos {
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+.letraTextoIconos {
+    font-size: 18pt;
+    font-weight: normal;
+}
+.btnApartamento  {
+    font-weight: bold;
+}
+@media (max-width: 600px) {
+    .letratituloA {
+        font-size: 20pt;
+    }
+    .letratituloA2{
+        font-size: 30pt;
+        font-weight: bold;
+    }
+    .lista{
+        list-style-image: url("http://localhost:8080/Portal40/img/Asset1.svg");
+        margin: 0px;
+    }
+    .lista li {
+        text-align: justify;
+        justify-content: flex-start;
+        font-size: 12pt;
+    }
+}

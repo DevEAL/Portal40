@@ -1,0 +1,46 @@
+.margen {
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5%;
+}
+.margen_content {
+  margin: 50px;
+  padding: 11%;
+  height: 400px;
+  box-shadow: -60px 60px 0 10px var(--ColorAzul), 60px -60px 0 10px var(--ColorAzul), 0 0 0 10px var(--colorRojo);
+}
+.img_Form {
+  height: 100px;
+  width: 100px;
+}
+
+.title_form {
+  font-size: 30pt;
+}
+
+.theme--light.v-input:not(.v-input--is-disabled) input, .theme--light.v-input:not(.v-input--is-disabled) textarea {
+  color: var(--colorWhite);
+}
+.theme--light.v-label {
+  color: var(--colorWhite);
+}
+.v-text-field>.v-input__control>.v-input__slot:after{
+  color: var(--ColorAzul);
+  transform: none !important;
+}
+#app .v-btn--example {
+  bottom: 0;
+  position: absolute;
+  margin: 0 0 16px 16px;
+}
+@media (max-width: 800px) { 
+  .margen {
+    margin: 0px;
+    padding: 35px;
+  }
+  .margen_content{
+    margin: 70px;
+  }
+}
