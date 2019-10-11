@@ -1,0 +1,14 @@
+$color-Azul:#04D7D7;
+$color-Rojo: #D9042B;
+$color-Black: #000;
+$color-White: #fff;
+
+$hat:'Red Hat Display', sans-serif;
+$open: 'Open Sans', sans-serif;
+
+@import 'general.scss';
+@import 'cabecera.scss';
+@import 'footer.scss';
+@import 'formulario.scss';
+@import 'Inicio.scss';
+@import 'modelo.scss';

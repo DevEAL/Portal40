@@ -1,0 +1,98 @@
+.seccion1 {
+    background-image: url("../img/old-white-brick-wall-background-texture-PN85D8Q.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.tamano-h-Inicio {
+    font-size: 60px;
+}
+.tamano-h-seccion {
+    font-size: 60px;
+}
+.tamano-t-Texto{
+    font-size: 35px;
+    text-align: center;
+}
+.negrilla{
+    font-weight: bold;
+}
+.margen-seccion {
+    margin: 0%;
+    padding: 23px;
+}
+.lista-inicio{
+    list-style: inside;
+    margin: 4%;
+    padding: 30px;
+    list-style: none;
+  }
+  .lista-inicio li {
+    margin: 1%;
+  }
+  .lista-inicio li::before {
+    content: "•";
+    color: $color-Rojo;
+  }
+@media (max-width: 1300px) {
+    .tamano-h-Inicio {
+        font-size: 55px;
+    }
+}
+@media (max-width: 1180px) {
+    .tamano-h-Inicio {
+        font-size: 50px;
+    }
+}
+@media (max-width: 1078px) {
+    .tamano-h-Inicio {
+        font-size: 45px;
+    }
+}
+@media (max-width: 976px) {
+    .tamano-h-Inicio {
+        font-size: 40px;
+    }
+    .tamano-h-seccion {
+        font-size: 35px;
+    }
+    .tamano-t-Texto{
+        font-size: 20px;
+        text-align: center;
+    }
+    .v-application ol, .v-application ul {
+        padding-left: 0px;
+    }
+    .lista-inicio{
+        list-style: inside;
+        margin: 0%;
+        padding: 0px;
+        list-style: none;
+    }
+    .lista-inicio li {
+        margin: 4%;
+      }
+}
+@media (max-width: 400px) {
+    .tamano-h-Inicio {
+        font-size: 32px;
+    }
+    .tamano-h-seccion {
+        font-size: 32px;
+    }
+    .tamano-t-Texto{
+        font-size: 20px;
+        text-align: center;
+    }
+    .v-application ol, .v-application ul {
+        padding-left: 0px;
+    }
+    .lista-inicio{
+        list-style: inside;
+        margin: 0%;
+        padding: 0px;
+        list-style: none;
+    }
+    .lista-inicio li {
+        margin: 4%;
+      }
+}

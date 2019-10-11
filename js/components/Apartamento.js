@@ -169,8 +169,8 @@ Vue.component("Apartamento", {
     data() {
         return {
             img2habitaciones: "http://localhost:8080/Portal40/img/old-white-brick-wall-background-texture-PN85D8Q.jpg",
-            img1habitacion: "http://localhost:8080/Portal40/img/bright-loft-apartment-PX363CC.jpg",
-            img3habitaciones: "http://localhost:8080/Portal40/img/bright-loft-apartment-PX363CC.jpg"
+            img1habitacion: "http://localhost:8080/Portal40/img/galeria/bright-loft-apartment-PX363CC.jpg",
+            img3habitaciones: "http://localhost:8080/Portal40/img/galeria/bright-loft-apartment-PX363CC.jpg"
         }
     },
 })

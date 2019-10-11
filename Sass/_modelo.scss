@@ -1,0 +1,59 @@
+.titulo-Modelo {
+    font-size: 55pt;
+    font-weight: bold;
+    margin: 4%;
+}
+.letra-Titulo-Iconos {
+    font-size: 25pt;
+    font-weight: bold;
+}
+.letra-Texto-Iconos {
+    font-size: 23pt;
+    font-weight: bold;
+}
+.letra-Texto-resena {
+    font-size: 18pt;
+    font-weight: bold;
+}
+@media (max-width: 1520px) {
+    .titulo-Modelo {
+        font-size: 47pt;
+        font-weight: bold;
+    }
+    .letra-Titulo-Iconos {
+        font-size: 22pt;
+        font-weight: bold;
+    }
+    .letra-Texto-Iconos {
+        font-size: 20pt;
+        font-weight: bold;
+    }
+    .letra-Texto-resena {
+        font-size: 14pt;
+        font-weight: bold;
+    }
+}
+@media (max-width: 1256px) {
+    .titulo-Modelo {
+        font-size: 37pt;
+        font-weight: bold;
+    }
+    .letra-Titulo-Iconos {
+        font-size: 20pt;
+        font-weight: bold;
+    }
+    .letra-Texto-Iconos {
+        font-size: 16pt;
+        font-weight: bold;
+    }
+    .letra-Texto-resena {
+        font-size: 13pt;
+        font-weight: bold;
+    }
+}
+@media (max-width: 800px) {
+    .titulo-Modelo {
+        font-size: 25pt;
+        font-weight: bold;
+    }
+}

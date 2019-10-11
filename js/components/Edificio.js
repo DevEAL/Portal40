@@ -41,7 +41,7 @@ Vue.component("Edificio", {
                     <v-row lg="12">
                         <v-col cols="12" xl="6" lg="6" md="6" sm="12" xs="12">
                             <v-row lg="12" align="center" justify="center">
-                                <img src="http://localhost:8080/Portal40/img/Asset2.png" class="localizacion"/>
+                                <img src="http://localhost:8080/Portal40/img/edificio/Asset2.png" class="localizacion"/>
                             </v-row>
                         </v-col>
                         <v-col cols="12" xl="6" lg="6" md="6" sm="12" xs="12" class="letra_Open letraTextoE">
@@ -63,27 +63,27 @@ Vue.component("Edificio", {
         return {
             items: [
                 {
-                    src: 'http://localhost:8080/Portal40/img/friends-on-the-rooftop-SATFKMX.jpg',
+                    src: 'http://localhost:8080/Portal40/img/edificio/friends-on-the-rooftop-SATFKMX.jpg',
                     titulo: 'Terraza'
                 },
                 {
-                    src: 'http://localhost:8080/Portal40/img/roofed-office-building-entrance-at-night-PCZQRCE.jpg',
+                    src: 'http://localhost:8080/Portal40/img/edificio/roofed-office-building-entrance-at-night-PCZQRCE.jpg',
                     titulo: 'Corredor Verde'
                 },
                 {
-                    src: 'http://localhost:8080/Portal40/img/friends-with-popcorn-and-drinks-talking-at-home-PNJPFZB.jpg',
+                    src: 'http://localhost:8080/Portal40/img/edificio/friends-with-popcorn-and-drinks-talking-at-home-PNJPFZB.jpg',
                     titulo: 'Sala común'
                 },
                 {
-                    src: 'http://localhost:8080/Portal40/img/laundry-machines-at-laundromat-shop-PWQ2LMD.jpg',
+                    src: 'http://localhost:8080/Portal40/img/edificio/laundry-machines-at-laundromat-shop-PWQ2LMD.jpg',
                     titulo: 'Lavanderia'
                 },
                 {
-                    src: 'http://localhost:8080/Portal40/img/security-camera-P66JM58.jpg',
+                    src: 'http://localhost:8080/Portal40/img/edificio/security-camera-P66JM58.jpg',
                     titulo: 'Vigilancia 24 horas'
                 },
                 {
-                    src: 'http://localhost:8080/Portal40/img/parking-garage-underground-interior-P9N6UAX.jpg',
+                    src: 'http://localhost:8080/Portal40/img/edificio/parking-garage-underground-interior-P9N6UAX.jpg',
                     titulo: 'Parqueadero'
                 }
             ]

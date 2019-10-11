@@ -1,0 +1,126 @@
+.form{
+    .margen {
+        align-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 4% 5%;
+        position: relative;
+    }
+    .margenDerecha{
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        width: 100px;
+        height: 100px;
+    }
+    .margenIzquierda{
+        position: absolute;
+        right: 10%;
+        bottom: 10%;
+        width: 100px;
+        height: 100px;
+    }
+    .title-form {
+        font-size: 30pt;
+    }
+    .texto-form {
+        font-size: 17pt;
+    }
+    .img-form {
+        height: 100px;
+        width: 100px;
+    }
+    .theme--light.v-input:not(.v-input--is-disabled) input, .theme--light.v-input:not(.v-input--is-disabled) textarea {
+        color: $color-White;
+    }
+    .theme--light.v-label {
+        color: $color-White;
+    }
+    .v-text-field>.v-input__control>.v-input__slot:after{
+    color: $color-Azul;
+    transform: none !important;
+    }
+    #app .v-btn--example {
+    bottom: 0;
+    position: absolute;
+    margin: 0 0 16px 16px;
+    }
+    @media (max-width: 1800px) {
+        .margen_content {
+            padding: 1px;
+        }
+        .title-form {
+            font-size: 20pt;
+        }
+        .texto-form {
+            font-size: 15pt;
+        }
+    }
+
+    @media (max-width: 1263px) {
+        .margen_content {
+            padding: 1px;
+        }
+        .title-form {
+            font-size: 20pt;
+        }
+        .texto-form {
+            font-size: 14pt;
+        }
+    }
+
+    @media (max-width: 1158px) {
+        .title-form {
+            font-size: 20pt;
+        }
+        .texto-form {
+            font-size: 13pt;
+        }
+        .img-form {
+            height: 80px;
+            width: 80px;
+        }
+    }
+
+    @media (max-width: 958px) {
+        .margen {
+          margin: 0px;
+          padding: 9% 12%;
+        }
+        .margen_content{
+          margin: 70px;
+        }
+      }
+    @media (max-width: 400px) {
+        .margen {
+            margin: 0px;
+            padding: 35px;
+        }
+        .margen_content{
+            margin: 70px;
+        }
+          .margenDerecha{
+            top: 5%;
+            left: 5%;
+            width: 80px;
+            height: 80px;
+        }
+        .margenIzquierda{
+            right: 5%;
+            bottom: 5%;
+            width: 80px;
+            height: 80px;
+        }
+        .title-form {
+            font-size: 20pt;
+        }
+        .texto-form {
+            font-size: 12pt;
+        }
+        .img-form {
+            height: 80px;
+            width: 80px;
+        }
+    }
+}

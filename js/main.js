@@ -49,7 +49,6 @@ var app = new Vue({
   router,
   el: '#app',
     data: {
-      
     },
 vuetify: new Vuetify(),
 }).$mount('#app')

@@ -25,6 +25,28 @@
 .headPortal{
   padding-top: 6px;
 }
+.seccion1{
+  background-image: url("../img/old-white-brick-wall-background-texture-PN85D8Q.jpg");
+}
+.lista-inicio{
+  list-style: inside;
+  margin: 4%;
+  padding: 30px;
+  list-style: none;
+}
+.lista-inicio li {
+  margin-top: 4%;
+}
+.lista-inicio li::before {
+  content: "•";
+  color: var(--colorRojo);
+}
+@media(max-width: 1500px) {
+  .letra_menu{
+    font-size: 14pt;
+  }
+}
+
 @media (max-width: 1300px) {
   .btn_floating{
     margin-top: 40%;
@@ -35,6 +57,9 @@
   }
   .v-btn--fab.v-size--x-large.v-btn--absolute.v-btn--top {
     top: 110px;
+  }
+  .letra_menu{
+    font-size: 12pt;
   }
 }
 @media (max-width: 800px) {

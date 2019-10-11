@@ -11,7 +11,6 @@ Vue.component("Carousels", {
           cycle
           height="600"
           hide-delimiter-background
-          show-arrows-on-hover
           >
           <v-carousel-item
             v-for="(item,i) in items"
@@ -29,14 +28,14 @@ Vue.component("Carousels", {
         return {
             items: [
                 {
-                  src: 'http://localhost:8080/Portal40/img/bright-loft-apartment-PX363CC.jpg',
+                  src: 'http://localhost:8080/Portal40/img/galeria/bright-loft-apartment-PX363CC.jpg',
                 },
-                {
-                  src: 'http://localhost:8080/Portal40/img/bright-loft-apartment-PX363CC.jpg',
-                },
-                {
-                  src: 'http://localhost:8080/Portal40/img/bright-loft-apartment-PX363CC.jpg',
-                }
+                // {
+                //   src: 'http://localhost:8080/Portal40/img/bright-loft-apartment-PX363CC.jpg',
+                // },
+                // {
+                //   src: 'http://localhost:8080/Portal40/img/bright-loft-apartment-PX363CC.jpg',
+                // }
               ]
         }
     },

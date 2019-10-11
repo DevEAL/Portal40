@@ -1,0 +1,46 @@
+.texto-hat {
+  font-family: $hat;
+}
+.texto-opera {
+  font-family: $open;
+}
+.color-texto-rojo {
+  color: $color-Rojo;
+}
+.color-texto-azul {
+  color: $color-Azul;
+}
+.fondo-Azul {
+  background: $color-Azul;
+}
+.fondo-Rojo {
+  background: $color-Rojo;
+}
+#app{
+  background: #000;
+}
+.theme--dark.v-btn.v-btn--icon{
+  color: $color-Rojo;
+}
+.divisor{
+  padding: 0;
+  margin: auto;
+  width: 25%;
+  height: 6px;
+}
+@media (max-width: 564px) {
+  .divisor {
+    padding: 0;
+    margin: auto;
+    width: 45%;
+    height: 5px;
+  }
+}
+@media (max-width: 400px) {
+  .divisor {
+    padding: 0;
+    margin: auto;
+    width: 53%;
+    height: 5px;
+  }
+}

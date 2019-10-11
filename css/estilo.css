@@ -72,6 +72,12 @@ body {
 .paddingFooter{
   padding: 20px 100px;
 }
+.divisor{
+  padding: 0;
+  margin: auto;
+  width: 25%;
+  height: 10px;
+}
 @media (max-width: 800px) {
   .responsive {
     display: none;

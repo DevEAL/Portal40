@@ -2,36 +2,29 @@ Vue.component("Inicio", {
     template: // html
     `
     <div>
-        <v-row>
-            <v-col cols="12" xl="12" lg="12" md="12" sm="12" xs="12" class="align-center justify-center">
-                <v-img
-                    src="http://localhost:8080/Portal40/img/old-white-brick-wall-background-texture-PN85D8Q.jpg"
-                    class="white--text"
-                    height="250px"
-                >
-                    <p class="letra_Hat color-texto text-center py-8 px-2 tamano_h"> <span class="negrilla">PENSAMOS</span> EN TU <span class="negrilla">COMODIDAD <br/>&#161;</span>VIVE <span class="negrilla">PORTAL 40!</span></p>
-                </v-img>
+      <div class="text-center">
+        <v-row class="d-flex align-center justify-center">
+          <v-col cols="12" xl="12" lg="12" md="12" sm="12" xs="12" class="seccion1">
+            <p class="texto-hat  color-texto-rojo tamano-h-Inicio negrilla margen-seccion"> "COMPRA TU APARTAMENTO EN PORTAL 40 <br/> DESDE $140´MILLONES"</p>
+          </v-col>
+          <v-col cols="12" xl="12" lg="12" md="12" sm="12" xs="12" class="black">
+            <v-col cols="12" xl="12" lg="12" md="12" sm="12" xs="12">
+              <h1 class="texto-hat  color-texto-rojo tamano-h-seccion">CONOCE <span class="negrilla">PORTAL 40</span></h1>
+              <p class="divisor fondo-Azul"></p>
+              <ul class="white--text tamano-t-Texto lista-inicio">
+                <li>Portal 40 te permitirá <span class="color-texto-azul">maximizar tu inversión,</span> valorizándola y generándote diferentes ingresos ya que implementa un novedoso concepto de <span class="color-texto1">5 negocios en 1.</span></li>
+                <li>Es el lugar ideal para <span class="color-texto-azul">invertir en tu futuro,</span> es el lugar  ideal para vivir cerca de todo.</li>
+                <li>Portal 40 es un edificio de apartamentos <span class="color-texto-azul">ubicado estratégicamente en Chapinero.</span></li>
+                <li>El edificio está <span class="color-texto-azul">pensado para tu comodidad</span> mejorando tu movilidad, reduciendote el tiempo de desplazamiento para que puedas utilizarlo en lo que más te gusta. Lo logra con su <span class="color-texto1">ubicación estratégica</span> y con variada oferta  de transporte público, diferentes vías de acceso, cicloruta y mucho más.</li>
+              </ul>
+              <p class="divisor fondo-Azul"></p>
             </v-col>
-            <v-col cols="12" xl="12" lg="12" md="12" sm="12" xs="12" class="black">
-                <v-col cols="12" xl="12" lg="12" md="12" sm="12" xs="12">
-                <p class="letra_Hat text-center color-texto tamano_h">CONOCE <span class="negrilla">PORTAL 40</span></p>
-                <p class="fill-height letra_Open white--text tamano-t">
-                    Portal 40 es un proyecto de apartamentos, Cuenta con una localizaci&oacute;n estrat&eacute;gica que permite estar cerca de
-                    actividades laborales, comerciales, financieras, recreativas y acad&eacute;micas. Es un proyecto pensado para su comodidad
-                    que tiene f&aacute;cil acceso a transporte p&uacute;blico lo cual le proporcionar&aacute; mayor movilidad.
-                    Portal 40 se convierte en un punto estrat&eacute;gico para la valorizaci&oacute;n de su inversi&oacute;n, que implementa un novedoso
-                    concepto de 5 negocios en 1.
-                    Es el lugar ideal para invertir en el futuro.
-                </p>
-                <p class="fill-height text-center color-texto1 tamano-t1">
-                    &#161;UN NEGOCIO SEGURO!
-                </p>
-                </v-col>
-                <v-col cols="12" xl="12" lg="12" md="12" sm="12" xs="12" class="white">
-                    <iframe width="800" height="400" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </v-col>
+            <v-col cols="12" xl="12" lg="12" md="12" sm="12" xs="12" >
+              <iframe width="400" height="400" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </v-col>
+          </v-col>
         </v-row>
+      </div>
     </div>
     `,
 })
