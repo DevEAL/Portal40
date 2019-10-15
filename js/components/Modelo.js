@@ -71,10 +71,10 @@ Vue.component("Modelo", {
             </v-col>
             <v-col cols="12" class="black text-center white--text">
                 <v-container>
-                    <h1 class="color-texto-azul texto-hat letratituloA2">BENEFICIOS</h1>
-                    <p class="texto-opera letratituloA3">POR LOS QUE INVERTIR</p>
+                    <h1 class="color-texto-azul texto-hat letra-Titulo-2">BENEFICIOS</h1>
+                    <p class="texto-opera letra-Titulo-3">POR LOS QUE INVERTIR</p>
                     <p class="divisor fondo-Rojo"></p>
-                    <ul class="text-left texto-opera lista">
+                    <ul class="text-left texto-opera lista-Modelo">
                         <li>Negocio maduro con mas de 3 años de explotación con éxito.</li>
                         <li>Con los ingresos a la copropiedad pague solo el 20% del valor de la administración.<br/>¡AHORRESE EL 80% DE LA CUOTA DE ADMINISTRACIÓN!</li>
                         <li>Portal 40 está construido pensando en: estudiantes, profesionales, etc.</li>
@@ -92,7 +92,7 @@ Vue.component("Modelo", {
                     </ul>
                 </v-container>
             </v-col>
-            <v-col cols="12"  class="seccion1 lighten-3 text-center texto-hat letratituloA">
+            <v-col cols="12"  class="seccion1 lighten-3 text-center texto-hat seccion-tres-Modelo">
                 <v-row lg="12" align="center" justify="center">
                     <v-col cols="12" xl="12" lg="12" md="12" sm="12" xs="12">
                         <p>INVIERTE EN <span class="color-texto-rojo">PORTAL 40 <br /> DONDE 1 SON 5</span></p>

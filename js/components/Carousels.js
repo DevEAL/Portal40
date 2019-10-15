@@ -3,40 +3,33 @@ Vue.component("Carousels", {
     `
     <div>
       <v-container
-        class="spacing-playground py-10 px-10 black"
+        class="spacing-playground black carousels-40"
         fluid
       >
-      <v-row>
-        <v-carousel
-          cycle
-          height="600"
-          hide-delimiter-background
-          >
-          <v-carousel-item
-            v-for="(item,i) in items"
+        <vueper-slides class="no-shadow" arrows-outside bullets-outside autoplay transition-speed="250">
+          <vueper-slide
+            v-for="(slide, i) in slides"
             :key="i"
-            :src="item.src"
-            reverse-transition="fade-transition"
-            transition="fade-transition"
-          ></v-carousel-item>
-        </v-carousel>
-      </v-row>
+            :image="slide.src"
+            :infinite="true"
+            ></vueper-slide>
+        </vueper-slides>
       </v-container>
     </div>
     `,
     data() {
         return {
-            items: [
-                {
-                  src: 'http://localhost:8080/Portal40/img/galeria/bright-loft-apartment-PX363CC.jpg',
-                },
-                // {
-                //   src: 'http://localhost:8080/Portal40/img/bright-loft-apartment-PX363CC.jpg',
-                // },
-                // {
-                //   src: 'http://localhost:8080/Portal40/img/bright-loft-apartment-PX363CC.jpg',
-                // }
-              ]
+          slides: [
+            {
+              src: 'http://localhost:8080/Portal40/img/galeria/bright-loft-apartment-PX363CC.jpg',
+            },
+            {
+              src: 'http://localhost:8080/Portal40/img/galeria/bright-loft-apartment-PX363CC.jpg',
+            },
+            {
+              src: 'http://localhost:8080/Portal40/img/bedroom-in-loft-PEKDXR7.jpg',
+            }
+          ]
         }
     },
 })

@@ -25,14 +25,14 @@
     margin: 4%;
     padding: 30px;
     list-style: none;
-  }
-  .lista-inicio li {
+  li {
     margin: 1%;
   }
-  .lista-inicio li::before {
+  li::before {
     content: "•";
     color: $color-Rojo;
   }
+}
 @media (max-width: 1300px) {
     .tamano-h-Inicio {
         font-size: 55px;

@@ -1,4 +1,5 @@
 $color-Azul:#04D7D7;
+$color-Azul-dark:rgb(5, 197, 197);
 $color-Rojo: #D9042B;
 $color-Black: #000;
 $color-White: #fff;
@@ -12,3 +13,5 @@ $open: 'Open Sans', sans-serif;
 @import 'formulario.scss';
 @import 'Inicio.scss';
 @import 'modelo.scss';
+@import 'apartamento.scss';
+@import 'carousels.scss';

@@ -1,0 +1,64 @@
+.letra-titulo-apartamento {
+    margin-bottom: -22px !important;
+    font-size: 70pt;
+    font-weight: bold;
+}
+.texto-titulo-apartamento{
+    font-size: 70pt;
+    font-size-adjust: 0.58;
+    font-weight: bold;
+}
+.texto-apartamento{
+    font-size: 30pt;
+    font-size-adjust: 0.58;
+}
+.letra-titulo-360{
+    font-size: 20pt;
+    font-weight: bold;
+}
+.letra-texto-360{
+    font-size:  18pt;
+    font-weight: 200;
+}
+.texto-slider{
+    padding: 5%;
+}
+.slider-apartamento {
+    margin: auto;
+    .vueperslides{
+        margin: auto;
+    }
+    .vueperslides__bullet {
+        border: 1px solid $color-Azul !important;
+        background-color: rgba($color: $color-Azul, $alpha: 0.5) !important;
+    }
+    .ex--center-mode {
+        width: 800px;
+        max-width: 100%;
+        margin: auto;
+    }
+}
+.slider-apartamento .theme--light .v-application {
+    color: $color-Azul !important;
+}
+.btn-apartamento {
+    text-decoration: none;
+    background: $color-Azul;
+    margin: 9px 90px;
+    padding: 20px;
+    font-size: 50pt;
+    text-align: center;
+    box-shadow: 10px 10px 10px 0 #ccc;
+    a{
+        text-decoration: none;
+        color: #fff !important;
+    }
+    a::after{
+        content: ">>";
+        color: $color-Rojo;
+        font-weight: bold;
+    }
+    span{
+        font-weight: bold;
+    }
+}
