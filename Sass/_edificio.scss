@@ -1,0 +1,32 @@
+.letra-Titulo-edifico {
+    font-size: 60pt;
+    font-weight: bold;
+}
+.letra-edificio {
+    font-size: 30pt;
+    font-weight: bold;
+}
+@media(max-width: 1263px){
+    .letra-Titulo-edifico {
+        font-size: 40pt;
+    }
+    .letra-edificio {
+        font-size: 25pt;
+    }
+}
+@media(max-width: 800px){
+    .letra-Titulo-edifico {
+        font-size: 35pt;
+    }
+    .letra-edificio {
+        font-size: 22pt;
+    }
+}
+@media(max-width: 400px){
+    .letra-Titulo-edifico {
+        font-size: 20pt;
+    }
+    .letra-edificio {
+        font-size: 18pt;
+    }
+}

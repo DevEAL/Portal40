@@ -1,0 +1,95 @@
+.letra-contacto {
+    font-size: 50pt;
+    font-weight: bold;
+}
+.texto-contacto {
+    font-size: 20pt;
+}
+.texto-titulo-contacto {
+    font-size: 45pt;
+    font-weight: bold;
+}
+.mapa{
+    width: 600px;
+    height: 550px;
+}
+.localizacion{
+    width: 600px;
+    height: 550px;
+}
+@media(max-width: 1639px){
+    .letra-contacto {
+        font-size: 40pt;
+    }
+    .texto-contacto {
+        font-size: 16pt;
+    }
+    .texto-titulo-contacto {
+        font-size: 20pt;
+    }
+    .mapa{
+        width: 500px;
+        height: 400px;
+    }
+    .localizacion{
+        width: 500px;
+        height: 400px;
+    }
+}
+@media(max-width: 1263px){
+    .letra-contacto {
+        font-size: 40pt;
+    }
+    .texto-contacto {
+        font-size: 16pt;
+    }
+    .texto-titulo-contacto {
+        font-size: 20pt;
+    }
+    .mapa{
+        width: 800px;
+        height: 500px;
+    }
+    .localizacion{
+        width: 800px;
+        height: 500px;
+    }
+}
+@media(max-width: 800px){
+    .letra-contacto {
+        font-size: 40pt;
+    }
+    .texto-contacto {
+        font-size: 16pt;
+    }
+    .texto-titulo-contacto {
+        font-size: 20pt;
+    }
+    .mapa{
+        width: 700px;
+        height: 500px;
+    }
+    .localizacion{
+        width: 700px;
+        height: 500px;
+    }
+}
+@media(max-width: 400px){
+    .letra-contacto {
+        font-size: 26pt;
+    }
+    .texto-contacto {
+        font-size: 16pt;
+    }
+    .texto-titulo-contacto {
+        font-size: 20pt;
+    }
+    .mapa{
+        width: 300px;
+        height: 300px;
+    }
+    .localizacion{
+        width: 300px;
+        height: 300px;
+    }
+}

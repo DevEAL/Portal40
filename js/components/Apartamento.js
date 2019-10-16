@@ -34,7 +34,7 @@ Vue.component("Apartamento", {
                             </v-col>
                         </v-col>
                         <v-col cols="12" xl="6" lg="6" md="6" sm="12" xs="12" class="slider-apartamento">
-                            <vueper-slides class="no-shadow" arrows-outside bullets-outside transition-speed="250" 3d fixed-height="400px">
+                            <vueper-slides class="no-shadow" arrows-outside bullets-outside transition-speed="250" fixed-height="400px">
                                 <vueper-slide
                                 v-for="(slide, i) in slides1"
                                 :key="i"
@@ -68,7 +68,7 @@ Vue.component("Apartamento", {
                             </v-col>
                         </v-col>
                         <v-col cols="12" xl="6" lg="6" md="6" sm="12" xs="12" class="slider-apartamento">
-                            <vueper-slides class="no-shadow" arrows-outside bullets-outside transition-speed="250" 3d fixed-height="400px">
+                            <vueper-slides class="no-shadow" arrows-outside bullets-outside transition-speed="250" fixed-height="400px">
                                 <vueper-slide
                                 v-for="(slide, i) in slides2"
                                 :key="i"
@@ -99,7 +99,7 @@ Vue.component("Apartamento", {
                             </v-row>
                         </v-col>
                         <v-col cols="12" xl="6" lg="6" md="6" sm="12" xs="12" class="slider-apartamento">
-                            <vueper-slides class="no-shadow" arrows-outside bullets-outside transition-speed="250" 3d fixed-height="400px">
+                            <vueper-slides class="no-shadow" arrows-outside bullets-outside transition-speed="250" fixed-height="400px">
                                 <vueper-slide
                                 v-for="(slide, i) in slides3"
                                 :key="i"
@@ -123,26 +123,62 @@ Vue.component("Apartamento", {
         return {
             slides1: [
                 {
-                  src: 'http://localhost:8080/Portal40/img/galeria/bright-loft-apartment-PX363CC.jpg',
+                  src: 'http://localhost:8080/Portal40/img/apartamento/1-habitacion.png',
                 },
                 {
-                    src: 'http://localhost:8080/Portal40/img/galeria/bright-loft-apartment-PX363CC.jpg',
+                    src: 'http://localhost:8080/Portal40/img/apartamento/1-habitacion-2.png',
+                },
+                {
+                    src: 'http://localhost:8080/Portal40/img/apartamento/1-habitacion-3.png',
+                },
+                {
+                    src: 'http://localhost:8080/Portal40/img/apartamento/1-habitacion-4.png',
+                },
+                {
+                    src: 'http://localhost:8080/Portal40/img/apartamento/1-habitacion-5.png',
+                },
+                {
+                    src: 'http://localhost:8080/Portal40/img/apartamento/1-habitacion-6.png',
                 }
               ],
               slides2: [
                 {
-                  src: 'http://localhost:8080/Portal40/img/galeria/bright-loft-apartment-PX363CC.jpg',
+                    src: 'http://localhost:8080/Portal40/img/apartamento/2-habitacion-1.png',
                 },
                 {
-                    src: 'http://localhost:8080/Portal40/img/galeria/bright-loft-apartment-PX363CC.jpg',
+                    src: 'http://localhost:8080/Portal40/img/apartamento/2-habitacion-2.png',
+                },
+                {
+                    src: 'http://localhost:8080/Portal40/img/apartamento/2-habitacion-3.png',
+                },
+                {
+                    src: 'http://localhost:8080/Portal40/img/apartamento/2-habitacion-4.png',
+                },
+                {
+                    src: 'http://localhost:8080/Portal40/img/apartamento/2-habitacion-5.png',
+                },
+                {
+                    src: 'http://localhost:8080/Portal40/img/apartamento/2-habitacion-6.png',
                 }
               ],
               slides3: [
                 {
-                  src: 'http://localhost:8080/Portal40/img/galeria/bright-loft-apartment-PX363CC.jpg',
+                    src: 'http://localhost:8080/Portal40/img/apartamento/3-habitacion-1.png',
                 },
                 {
-                    src: 'http://localhost:8080/Portal40/img/galeria/bright-loft-apartment-PX363CC.jpg',
+                    src: 'http://localhost:8080/Portal40/img/apartamento/3-habitacion-2.png',
+                },
+                {
+                    src: 'http://localhost:8080/Portal40/img/apartamento/3-habitacion-3.png',
+                },
+                {
+                    src: 'http://localhost:8080/Portal40/img/apartamento/3-habitacion-4.png',
+                },
+                {
+                    src: 'http://localhost:8080/Portal40/img/apartamento/3-habitacion-5.png',
+                },
+                {
+                    src: 'http://localhost:8080/Portal40/img/apartamento/3-habitacion-6.png',
                 }
               ]
         }

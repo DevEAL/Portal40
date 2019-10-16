@@ -1,5 +1,5 @@
 .carousels-40 {
-    padding: 10px 100px !important;
+    padding: 60px 100px !important;
     .ex--center-mode {
         width: 600px;
         max-width: 100%;
@@ -18,4 +18,18 @@
 }
 .vueperslides__arrows--outside .vueperslides__arrow--prev {
     left: -70px;
+}
+@media(max-width: 400px){
+    .carousels-40 {
+        padding: 20px 0px;
+    }
+    .vueperslides__arrows--outside .vueperslides__arrow--next {
+        right: -1%;
+    }
+    .vueperslides__arrows--outside .vueperslides__arrow--prev {
+        left: -1%;
+    }
+    .vueperslides__bullets--outside{
+        display: none;
+    }
 }

@@ -3,7 +3,7 @@ Vue.component("Edificio", {
     `
     <div>
         <v-row>
-            <v-col cols="12" class="cyan text-center letra_Hat letraTituloC">
+            <v-col cols="12" class="fondo-Azul text-center texto-hat letra-Titulo-edifico">
                 <v-container class="white--text">
                     <p>ADEM&#193;S NUESTRO EDIFICIO CUENTA CON...</p>
                 </v-container>
@@ -15,7 +15,7 @@ Vue.component("Edificio", {
                             cols="12"
                             xl="4"
                             lg="4"
-                            md="4"
+                            md="6"
                             sm="12"
                             xs="12"
                             v-for="(item,i) in items"
@@ -25,27 +25,27 @@ Vue.component("Edificio", {
                                 <v-img :src="item.src" height="300px" with="100px"/>
                             </v-col>
                             <v-col>
-                                <p class="text-center letra_Open letraTextoE">{{ item.titulo }}</p>
+                                <p class="black--text text-center texto-opera letra-edificio">{{ item.titulo }}</p>
                             </v-col>
                         </v-col>
                     </v-row>
                 </v-container>
             </v-col>
-            <v-col cols="12" class="color_fondo text-center letra_Hat letraTituloE">
-                <v-container class="white--text">
-                    <p>Ubicado en un sector estrat&eacute;gico de Bogot&aacute; muy cerca de gimnasios,<br/>centros culturales, comerciales, empresariales, gastron&oacute;micos y cl&iacute;nicas.</p>
-                </v-container>
+            <v-col cols="12" class="white color_fondo text-center texto-hat letraTituloE">
+                <div class="btn-apartamento texto-hat">
+                <a href="" target="_blank"><span>RECORRIDO VIRTUAL</span> CONOCE EL EDIFICIO</a>
+                </div>
             </v-col>
             <v-col cols="12" class="white">
                 <v-container>
                     <v-row lg="12">
-                        <v-col cols="12" xl="6" lg="6" md="6" sm="12" xs="12">
+                        <v-col cols="12" xl="6" lg="6" md="12" sm="12" xs="12">
                             <v-row lg="12" align="center" justify="center">
                                 <img src="http://localhost:8080/Portal40/img/edificio/Asset2.png" class="localizacion"/>
                             </v-row>
                         </v-col>
-                        <v-col cols="12" xl="6" lg="6" md="6" sm="12" xs="12" class="letra_Open letraTextoE">
-                            <ul>
+                        <v-col cols="12" xl="6" lg="6" md="12" sm="12" xs="12" class="texto-opera letraTextoE">
+                            <ul class="black--text letra-edificio ">
                                 <li>Restaurantes</li>
                                 <li>Comercio</li>
                                 <li>Servicios bancarios</li>

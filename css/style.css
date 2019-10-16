@@ -561,8 +561,68 @@
   .btn-apartamento span {
     font-weight: bold; }
 
+@media (max-width: 1263px) {
+  .letra-titulo-apartamento {
+    font-size: 60pt; }
+
+  .texto-titulo-apartamento {
+    font-size: 60pt; }
+
+  .texto-apartamento {
+    font-size: 25pt; }
+
+  .letra-titulo-360 {
+    font-size: 25pt; }
+
+  .letra-texto-360 {
+    font-size: 20pt; }
+
+  .btn-apartamento {
+    font-size: 30pt;
+    margin: 9px 22px; } }
+@media (max-width: 800px) {
+  .letra-titulo-apartamento {
+    font-size: 50pt; }
+
+  .texto-titulo-apartamento {
+    font-size: 50pt; }
+
+  .texto-apartamento {
+    font-size: 20pt; }
+
+  .letra-titulo-360 {
+    font-size: 20pt; }
+
+  .letra-texto-360 {
+    font-size: 18pt; }
+
+  .btn-apartamento {
+    font-size: 23pt;
+    margin: 9px 22px; }
+
+  .slider-apartamento .vueperslides__bullets--outside {
+    display: none; } }
+@media (max-width: 400px) {
+  .letra-titulo-apartamento {
+    font-size: 26pt; }
+
+  .texto-titulo-apartamento {
+    font-size: 26pt; }
+
+  .texto-apartamento {
+    font-size: 15pt; }
+
+  .letra-titulo-360 {
+    font-size: 15pt; }
+
+  .letra-texto-360 {
+    font-size: 14pt; }
+
+  .btn-apartamento {
+    font-size: 20pt;
+    margin: 9px 22px; } }
 .carousels-40 {
-  padding: 10px 100px !important; }
+  padding: 60px 100px !important; }
   .carousels-40 .ex--center-mode {
     width: 600px;
     max-width: 100%;
@@ -579,5 +639,131 @@
 
 .vueperslides__arrows--outside .vueperslides__arrow--prev {
   left: -70px; }
+
+@media (max-width: 400px) {
+  .carousels-40 {
+    padding: 20px 0px; }
+
+  .vueperslides__arrows--outside .vueperslides__arrow--next {
+    right: -1%; }
+
+  .vueperslides__arrows--outside .vueperslides__arrow--prev {
+    left: -1%; }
+
+  .vueperslides__bullets--outside {
+    display: none; } }
+.letra-Titulo-edifico {
+  font-size: 60pt;
+  font-weight: bold; }
+
+.letra-edificio {
+  font-size: 30pt;
+  font-weight: bold; }
+
+@media (max-width: 1263px) {
+  .letra-Titulo-edifico {
+    font-size: 40pt; }
+
+  .letra-edificio {
+    font-size: 25pt; } }
+@media (max-width: 800px) {
+  .letra-Titulo-edifico {
+    font-size: 35pt; }
+
+  .letra-edificio {
+    font-size: 22pt; } }
+@media (max-width: 400px) {
+  .letra-Titulo-edifico {
+    font-size: 20pt; }
+
+  .letra-edificio {
+    font-size: 18pt; } }
+.letra-contacto {
+  font-size: 50pt;
+  font-weight: bold; }
+
+.texto-contacto {
+  font-size: 20pt; }
+
+.texto-titulo-contacto {
+  font-size: 45pt;
+  font-weight: bold; }
+
+.mapa {
+  width: 600px;
+  height: 550px; }
+
+.localizacion {
+  width: 600px;
+  height: 550px; }
+
+@media (max-width: 1639px) {
+  .letra-contacto {
+    font-size: 40pt; }
+
+  .texto-contacto {
+    font-size: 16pt; }
+
+  .texto-titulo-contacto {
+    font-size: 20pt; }
+
+  .mapa {
+    width: 500px;
+    height: 400px; }
+
+  .localizacion {
+    width: 500px;
+    height: 400px; } }
+@media (max-width: 1263px) {
+  .letra-contacto {
+    font-size: 40pt; }
+
+  .texto-contacto {
+    font-size: 16pt; }
+
+  .texto-titulo-contacto {
+    font-size: 20pt; }
+
+  .mapa {
+    width: 800px;
+    height: 500px; }
+
+  .localizacion {
+    width: 800px;
+    height: 500px; } }
+@media (max-width: 800px) {
+  .letra-contacto {
+    font-size: 40pt; }
+
+  .texto-contacto {
+    font-size: 16pt; }
+
+  .texto-titulo-contacto {
+    font-size: 20pt; }
+
+  .mapa {
+    width: 700px;
+    height: 500px; }
+
+  .localizacion {
+    width: 700px;
+    height: 500px; } }
+@media (max-width: 400px) {
+  .letra-contacto {
+    font-size: 26pt; }
+
+  .texto-contacto {
+    font-size: 16pt; }
+
+  .texto-titulo-contacto {
+    font-size: 20pt; }
+
+  .mapa {
+    width: 300px;
+    height: 300px; }
+
+  .localizacion {
+    width: 300px;
+    height: 300px; } }
 
 /*# sourceMappingURL=style.css.map */

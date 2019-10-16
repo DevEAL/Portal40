@@ -62,3 +62,69 @@
         font-weight: bold;
     }
 }
+@media(max-width: 1263px){
+    .letra-titulo-apartamento{
+        font-size: 60pt;
+    }
+    .texto-titulo-apartamento{
+        font-size: 60pt;
+    }
+    .texto-apartamento{
+        font-size: 25pt;
+    }
+    .letra-titulo-360{
+        font-size: 25pt;
+    }
+    .letra-texto-360{
+        font-size:  20pt;
+    }
+    .btn-apartamento {
+        font-size: 30pt;
+        margin: 9px 22px;
+    }
+}
+@media(max-width: 800px){
+    .letra-titulo-apartamento{
+        font-size: 50pt;
+    }
+    .texto-titulo-apartamento{
+        font-size: 50pt;
+    }
+    .texto-apartamento{
+        font-size: 20pt;
+    }
+    .letra-titulo-360{
+        font-size: 20pt;
+    }
+    .letra-texto-360{
+        font-size:  18pt;
+    }
+    .btn-apartamento {
+        font-size: 23pt;
+        margin: 9px 22px;
+    }
+    .slider-apartamento .vueperslides__bullets--outside{
+        display: none;
+    }
+}
+@media(max-width: 400px){
+    .letra-titulo-apartamento{
+        font-size: 26pt;
+    }
+    .texto-titulo-apartamento{
+        font-size: 26pt;
+    }
+    .texto-apartamento{
+        font-size: 15pt;
+    }
+    .letra-titulo-360{
+        font-size: 15pt;
+    }
+    .letra-texto-360{
+        font-size:  14pt;
+    }
+    .btn-apartamento {
+        font-size: 20pt;
+        margin: 9px 22px;
+    }
+}
