@@ -20,13 +20,13 @@ Vue.component("Carousels", {
         return {
           slides: [
             {
-              src: 'http://localhost:8080/Portal40/img/galeria/bright-loft-apartment-PX363CC.jpg',
+              src: 'img/galeria/bright-loft-apartment-PX363CC.jpg',
             },
             {
-              src: 'http://localhost:8080/Portal40/img/galeria/bright-loft-apartment-PX363CC.jpg',
+              src: 'img/galeria/bright-loft-apartment-PX363CC.jpg',
             },
             {
-              src: 'http://localhost:8080/Portal40/img/bedroom-in-loft-PEKDXR7.jpg',
+              src: 'img/bedroom-in-loft-PEKDXR7.jpg',
             }
           ]
         }

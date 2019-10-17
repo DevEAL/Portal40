@@ -13,7 +13,7 @@ Vue.component("Contacto", {
                     <p class="black--text texto-opera texto-contacto">Carrera 13 # 40c - 10 Chapinero Central</p>
                 </v-col>
                 <v-col cols="12" xl="12" lg="12" md="12" sm="12" xs="12">
-                    <img src="http://localhost:8080/Portal40/img/edificio/parking-garage-underground-interior-P9N6UAX.jpg" class="localizacion" height="300px" with="100px"/>
+                    <img src="img/edificio/parking-garage-underground-interior-P9N6UAX.jpg" class="localizacion" height="300px" with="100px"/>
                 </v-col>
               </v-col>
               <v-col cols="12" xl="6" lg="6" md="12" sm="12" xs="12">

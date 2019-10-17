@@ -137,6 +137,9 @@
   .footer .container {
     padding: 10px; } }
 
+.btn {
+  float: right; }
+
 .form .margen {
   align-content: center;
   display: flex;

@@ -27,7 +27,7 @@ Vue.component("Footer40", {
                     </v-col>
                 </v-row>
                 <v-row align="center" justify="center">
-                    <img src="http://localhost:8080/Portal40/img/logoblanco.svg" height="150px" width="150px"/>
+                    <img src="img/logoblanco.svg" height="150px" width="150px"/>
                 </v-row>
                 <v-row>
                     <v-col cols="12">
