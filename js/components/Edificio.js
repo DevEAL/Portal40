@@ -44,13 +44,13 @@ Vue.component("Edificio", {
                                 <img src="img/edificio/Asset2.png" class="localizacion"/>
                             </v-row>
                         </v-col>
-                        <v-col cols="12" xl="6" lg="6" md="12" sm="12" xs="12" class="texto-opera letraTextoE">
-                            <ul class="black--text letra-edificio ">
-                                <li>Restaurantes</li>
-                                <li>Comercio</li>
-                                <li>Servicios bancarios</li>
-                                <li>Zonas verdes</li>
-                                <li>Universidades</li>
+                        <v-col cols="12" xl="6" lg="6" md="12" sm="12" xs="12" class="texto-opera letra-Texto-E lista-edifico">
+                            <ul class="black--text letra-Texto-E">
+                                <li class="item1">Restaurantes</li>
+                                <li class="item2">Comercio</li>
+                                <li class="item3">Servicios bancarios</li>
+                                <li class="item4">Zonas verdes</li>
+                                <li class="item5">Universidades</li>
                             </ul>
                         </v-col>
                     </v-row>

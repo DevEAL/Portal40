@@ -19,9 +19,42 @@
 .vueperslides__arrows--outside .vueperslides__arrow--prev {
     left: -70px;
 }
+.bnt-float{
+    background: $color-Azul;
+    padding: 1%;
+    z-index: 10;
+    position: fixed;
+    right: 0px;
+    top: 15%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    img{
+        width: 70px;
+        height: 70px;
+    }
+    img:hover{
+        width: 100px;
+        height: 80px;
+    }
+}
+.btn-whatapp{
+    padding: 1%;
+    z-index: 10;
+    position: fixed;
+    left: 30px;
+    top: 600px;
+    img{
+        width: 80px;
+        height: 80px;
+    }
+    img:hover{
+        width: 90px;
+        height: 90px;
+    }
+}
 @media(max-width: 400px){
     .carousels-40 {
-        padding: 20px 0px;
+        padding: 50px 0px !important;
     }
     .vueperslides__arrows--outside .vueperslides__arrow--next {
         right: -1%;
@@ -31,5 +64,27 @@
     }
     .vueperslides__bullets--outside{
         display: none;
+    }
+    .bnt-float{
+        padding: 2%;
+        img{
+            width: 50px;
+            height: 50px;
+        }
+        img:hover{
+            width: 50px;
+            height: 50px;
+        }
+    }
+    .btn-whatapp{
+        padding: 1%;
+        img{
+            width: 60px;
+            height: 60px;
+        }
+        img:hover{
+            width: 60px;
+            height: 60px;
+        }
     }
 }

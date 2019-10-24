@@ -41,6 +41,9 @@
     margin: auto;
     width: 53%;
     height: 5px; } }
+.cabecera {
+  z-index: 1000; }
+
 .letra-menu {
   font-size: 17pt; }
 
@@ -643,9 +646,38 @@
 .vueperslides__arrows--outside .vueperslides__arrow--prev {
   left: -70px; }
 
+.bnt-float {
+  background: #04D7D7;
+  padding: 1%;
+  z-index: 10;
+  position: fixed;
+  right: 0px;
+  top: 15%;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%; }
+  .bnt-float img {
+    width: 70px;
+    height: 70px; }
+  .bnt-float img:hover {
+    width: 100px;
+    height: 80px; }
+
+.btn-whatapp {
+  padding: 1%;
+  z-index: 10;
+  position: fixed;
+  left: 30px;
+  top: 600px; }
+  .btn-whatapp img {
+    width: 80px;
+    height: 80px; }
+  .btn-whatapp img:hover {
+    width: 90px;
+    height: 90px; }
+
 @media (max-width: 400px) {
   .carousels-40 {
-    padding: 20px 0px; }
+    padding: 50px 0px !important; }
 
   .vueperslides__arrows--outside .vueperslides__arrow--next {
     right: -1%; }
@@ -654,7 +686,25 @@
     left: -1%; }
 
   .vueperslides__bullets--outside {
-    display: none; } }
+    display: none; }
+
+  .bnt-float {
+    padding: 2%; }
+    .bnt-float img {
+      width: 50px;
+      height: 50px; }
+    .bnt-float img:hover {
+      width: 50px;
+      height: 50px; }
+
+  .btn-whatapp {
+    padding: 1%; }
+    .btn-whatapp img {
+      width: 60px;
+      height: 60px; }
+    .btn-whatapp img:hover {
+      width: 60px;
+      height: 60px; } }
 .letra-Titulo-edifico {
   font-size: 60pt;
   font-weight: bold; }
@@ -662,6 +712,37 @@
 .letra-edificio {
   font-size: 30pt;
   font-weight: bold; }
+
+.lista-edifico ul {
+  list-style: none; }
+  .lista-edifico ul .item1::before {
+    content: "●";
+    display: inline-block;
+    color: #FF911E;
+    font-size: 60px; }
+  .lista-edifico ul .item2::before {
+    content: "●";
+    display: inline-block;
+    color: #2FD3C7;
+    font-size: 60px; }
+  .lista-edifico ul .item3::before {
+    content: "●";
+    display: inline-block;
+    color: #66388E;
+    font-size: 60px; }
+  .lista-edifico ul .item4::before {
+    content: "●";
+    display: inline-block;
+    color: #000;
+    font-size: 60px; }
+  .lista-edifico ul .item5::before {
+    content: "●";
+    display: inline-block;
+    color: #FF7BAA;
+    font-size: 60px; }
+
+.letra-Texto-E {
+  font-size: 30pt; }
 
 @media (max-width: 1263px) {
   .letra-Titulo-edifico {
@@ -674,13 +755,22 @@
     font-size: 35pt; }
 
   .letra-edificio {
-    font-size: 22pt; } }
+    font-size: 22pt; }
+
+  .lista-edifico {
+    padding: 25px; } }
 @media (max-width: 400px) {
   .letra-Titulo-edifico {
     font-size: 20pt; }
 
   .letra-edificio {
-    font-size: 18pt; } }
+    font-size: 18pt; }
+
+  .lista-edifico {
+    padding: 25px; }
+
+  .letra-Texto-E {
+    font-size: 24pt; } }
 .letra-contacto {
   font-size: 50pt;
   font-weight: bold; }

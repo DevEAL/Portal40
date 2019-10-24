@@ -1,5 +1,5 @@
 <?php
-	$destino = "";
+	$destino = "backend@enalgunlugarestudio.com";
 	$nombre = $_POST['Nombre'];
 	$correo = $_POST['Correo'];
 	$Celular = $_POST['Celular'];
