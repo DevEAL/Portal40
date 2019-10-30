@@ -104,7 +104,14 @@
     display: none; }
 
   .logo-cel {
-    display: inline; } }
+    display: inline; }
+
+  .letra-menu {
+    font-size: 12pt; } }
+@media (max-width: 360px) {
+  .v-application .py-10 {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important; } }
 .footer .v-tabs-slider {
   background-color: #000 !important; }
 .footer .container {
@@ -233,15 +240,15 @@
     width: 80px; } }
 
 .seccion1 {
-  background-image: url("../img/old-white-brick-wall-background-texture-PN85D8Q.jpg");
+  background-image: url("../img/img_background_v2.jpg");
   background-position: center;
   background-size: cover; }
 
 .tamano-h-Inicio {
-  font-size: 60px; }
+  font-size: 40px; }
 
 .tamano-h-seccion {
-  font-size: 60px; }
+  font-size: 40px; }
 
 .tamano-t-Texto {
   font-size: 35px;
@@ -265,15 +272,27 @@
     content: "•";
     color: #D9042B; }
 
+.video {
+  width: 1200px;
+  height: 600px; }
+
 @media (max-width: 1300px) {
   .tamano-h-Inicio {
-    font-size: 55px; } }
+    font-size: 40px; } }
 @media (max-width: 1180px) {
   .tamano-h-Inicio {
-    font-size: 50px; } }
+    font-size: 40px; }
+
+  .video {
+    width: 1000px;
+    height: 600px; } }
 @media (max-width: 1078px) {
   .tamano-h-Inicio {
-    font-size: 45px; } }
+    font-size: 40px; }
+
+  .video {
+    width: 1000px;
+    height: 600px; } }
 @media (max-width: 976px) {
   .tamano-h-Inicio {
     font-size: 40px; }
@@ -295,7 +314,11 @@
     list-style: none; }
 
   .lista-inicio li {
-    margin: 4%; } }
+    margin: 4%; }
+
+  .video {
+    width: 800px;
+    height: 600px; } }
 @media (max-width: 400px) {
   .tamano-h-Inicio {
     font-size: 32px; }
@@ -317,9 +340,13 @@
     list-style: none; }
 
   .lista-inicio li {
-    margin: 4%; } }
+    margin: 4%; }
+
+  .video {
+    width: 350px;
+    height: 400px; } }
 .titulo-Modelo {
-  font-size: 55pt;
+  font-size: 35pt;
   font-weight: bold;
   margin: 4%; }
 
@@ -341,7 +368,7 @@
   font-weight: bold; }
 
 .letra-Titulo-2 {
-  font-size: 60pt;
+  font-size: 40pt;
   font-weight: bold; }
 
 .letra-Titulo-3 {
@@ -379,7 +406,7 @@
       left: 17%; } }
 @media (max-width: 1520px) {
   .titulo-Modelo {
-    font-size: 47pt;
+    font-size: 40pt;
     font-weight: bold; }
 
   .letra-Titulo-Iconos {
@@ -400,7 +427,7 @@
     font-weight: bold; }
 
   .letra-Titulo-2 {
-    font-size: 60pt;
+    font-size: 40pt;
     font-weight: bold; }
 
   .letra-Titulo-3 {
@@ -511,16 +538,16 @@
       left: 10%; } }
 .letra-titulo-apartamento {
   margin-bottom: -22px !important;
-  font-size: 70pt;
+  font-size: 40pt;
   font-weight: bold; }
 
 .texto-titulo-apartamento {
-  font-size: 70pt;
+  font-size: 40pt;
   font-size-adjust: 0.58;
   font-weight: bold; }
 
 .texto-apartamento {
-  font-size: 30pt;
+  font-size: 20pt;
   font-size-adjust: 0.58; }
 
 .letra-titulo-360 {
@@ -554,9 +581,10 @@
   background: #04D7D7;
   margin: 9px 90px;
   padding: 20px;
-  font-size: 50pt;
+  font-size: 30pt;
   text-align: center;
-  box-shadow: 10px 10px 10px 0 #ccc; }
+  box-shadow: 10px 10px 10px 0 #ccc;
+  color: #fff !important; }
   .btn-apartamento a {
     text-decoration: none;
     color: #fff !important; }
@@ -656,8 +684,9 @@
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%; }
   .bnt-float img {
-    width: 70px;
-    height: 70px; }
+    width: 50px;
+    height: 50px;
+    transition: .5s; }
   .bnt-float img:hover {
     width: 100px;
     height: 80px; }
@@ -670,7 +699,8 @@
   top: 600px; }
   .btn-whatapp img {
     width: 80px;
-    height: 80px; }
+    height: 80px;
+    transition: .5s; }
   .btn-whatapp img:hover {
     width: 90px;
     height: 90px; }
@@ -705,12 +735,32 @@
     .btn-whatapp img:hover {
       width: 60px;
       height: 60px; } }
+@media (max-width: 360px) {
+  .bnt-float {
+    padding: 2%;
+    top: 20%; }
+    .bnt-float img {
+      width: 50px;
+      height: 50px; }
+    .bnt-float img:hover {
+      width: 50px;
+      height: 50px; }
+
+  .btn-whatapp {
+    padding: 1%;
+    top: 450px; }
+    .btn-whatapp img {
+      width: 60px;
+      height: 60px; }
+    .btn-whatapp img:hover {
+      width: 60px;
+      height: 60px; } }
 .letra-Titulo-edifico {
-  font-size: 60pt;
+  font-size: 35pt;
   font-weight: bold; }
 
 .letra-edificio {
-  font-size: 30pt;
+  font-size: 20pt;
   font-weight: bold; }
 
 .lista-edifico ul {
@@ -719,37 +769,61 @@
     content: "●";
     display: inline-block;
     color: #FF911E;
-    font-size: 60px; }
+    font-size: 40px; }
   .lista-edifico ul .item2::before {
     content: "●";
     display: inline-block;
     color: #2FD3C7;
-    font-size: 60px; }
+    font-size: 40px; }
   .lista-edifico ul .item3::before {
     content: "●";
     display: inline-block;
     color: #66388E;
-    font-size: 60px; }
+    font-size: 40px; }
   .lista-edifico ul .item4::before {
     content: "●";
     display: inline-block;
     color: #000;
-    font-size: 60px; }
+    font-size: 40px; }
   .lista-edifico ul .item5::before {
     content: "●";
     display: inline-block;
     color: #FF7BAA;
-    font-size: 60px; }
+    font-size: 40px; }
 
 .letra-Texto-E {
   font-size: 30pt; }
 
+.img-edificio {
+  width: 500px;
+  height: 300px;
+  margin: auto; }
+
+.recorrido {
+  width: 1740px;
+  height: 700px; }
+
+@media (max-width: 1650px) {
+  .letra-Titulo-edifico {
+    font-size: 40pt; }
+
+  .recorrido {
+    width: 1200px;
+    height: 600px; } }
 @media (max-width: 1263px) {
   .letra-Titulo-edifico {
     font-size: 40pt; }
 
   .letra-edificio {
-    font-size: 25pt; } }
+    font-size: 25pt; }
+
+  .recorrido {
+    width: 1000px;
+    height: 600px; } }
+@media (max-width: 1650px) {
+  .recorrido {
+    width: 800px;
+    height: 500px; } }
 @media (max-width: 800px) {
   .letra-Titulo-edifico {
     font-size: 35pt; }
@@ -772,14 +846,14 @@
   .letra-Texto-E {
     font-size: 24pt; } }
 .letra-contacto {
-  font-size: 50pt;
+  font-size: 35pt;
   font-weight: bold; }
 
 .texto-contacto {
   font-size: 20pt; }
 
 .texto-titulo-contacto {
-  font-size: 45pt;
+  font-size: 30pt;
   font-weight: bold; }
 
 .mapa {
@@ -792,7 +866,7 @@
 
 @media (max-width: 1639px) {
   .letra-contacto {
-    font-size: 40pt; }
+    font-size: 35pt; }
 
   .texto-contacto {
     font-size: 16pt; }
@@ -809,7 +883,7 @@
     height: 400px; } }
 @media (max-width: 1263px) {
   .letra-contacto {
-    font-size: 40pt; }
+    font-size: 35pt; }
 
   .texto-contacto {
     font-size: 16pt; }
@@ -826,7 +900,7 @@
     height: 500px; } }
 @media (max-width: 800px) {
   .letra-contacto {
-    font-size: 40pt; }
+    font-size: 35pt; }
 
   .texto-contacto {
     font-size: 16pt; }

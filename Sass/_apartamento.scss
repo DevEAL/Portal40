@@ -1,15 +1,15 @@
 .letra-titulo-apartamento {
     margin-bottom: -22px !important;
-    font-size: 70pt;
+    font-size: 40pt;
     font-weight: bold;
 }
 .texto-titulo-apartamento{
-    font-size: 70pt;
+    font-size: 40pt;
     font-size-adjust: 0.58;
     font-weight: bold;
 }
 .texto-apartamento{
-    font-size: 30pt;
+    font-size: 20pt;
     font-size-adjust: 0.58;
 }
 .letra-titulo-360{
@@ -46,9 +46,10 @@
     background: $color-Azul;
     margin: 9px 90px;
     padding: 20px;
-    font-size: 50pt;
+    font-size: 30pt;
     text-align: center;
     box-shadow: 10px 10px 10px 0 #ccc;
+    color: #fff !important;
     a{
         text-decoration: none;
         color: #fff !important;

@@ -1,9 +1,9 @@
 .letra-Titulo-edifico {
-    font-size: 60pt;
+    font-size: 35pt;
     font-weight: bold;
 }
 .letra-edificio {
-    font-size: 30pt;
+    font-size: 20pt;
     font-weight: bold;
 }
 .lista-edifico ul{
@@ -12,35 +12,53 @@
         content: "●";
         display: inline-block;
         color: $color-Orange;
-        font-size: 60px;
+        font-size: 40px;
     }
     .item2::before{
         content: "●";
         display: inline-block;
         color: $color-Azul-Punto;
-        font-size: 60px;
+        font-size: 40px;
     }
     .item3::before{
         content: "●";
         display: inline-block;
         color: $color-Morado;
-        font-size: 60px;
+        font-size: 40px;
     }
     .item4::before{
         content: "●";
         display: inline-block;
         color: $color-Black;
-        font-size: 60px;
+        font-size: 40px;
     }
     .item5::before{
         content: "●";
         display: inline-block;
         color: $color-Rosado;
-        font-size: 60px;
+        font-size: 40px;
     }
 }
 .letra-Texto-E {
     font-size: 30pt;
+}
+.img-edificio {
+    width: 500px;
+    height: 300px;
+    margin: auto;
+}
+.recorrido {
+    width: 1740px;
+    height: 700px;
+}
+@media(max-width: 1650px){
+    .letra-Titulo-edifico {
+        font-size: 40pt;
+    }
+    .recorrido {
+        width: 1200px;
+        height: 600px;
+    }
 }
 @media(max-width: 1263px){
     .letra-Titulo-edifico {
@@ -48,6 +66,16 @@
     }
     .letra-edificio {
         font-size: 25pt;
+    }
+    .recorrido {
+        width: 1000px;
+        height: 600px;
+    }
+}
+@media(max-width: 1650px){
+    .recorrido {
+        width: 800px;
+        height: 500px;
     }
 }
 @media(max-width: 800px){
@@ -61,6 +89,7 @@
         padding: 25px;
     }
 }
+
 @media(max-width: 400px){
     .letra-Titulo-edifico {
         font-size: 20pt;

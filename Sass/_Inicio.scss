@@ -1,13 +1,13 @@
 .seccion1 {
-    background-image: url("../img/old-white-brick-wall-background-texture-PN85D8Q.jpg");
+    background-image: url("../img/img_background_v2.jpg");
     background-position: center;
     background-size: cover;
 }
 .tamano-h-Inicio {
-    font-size: 60px;
+    font-size: 40px;
 }
 .tamano-h-seccion {
-    font-size: 60px;
+    font-size: 40px;
 }
 .tamano-t-Texto{
     font-size: 35px;
@@ -33,19 +33,31 @@
     color: $color-Rojo;
   }
 }
+.video{
+    width: 1200px;
+    height: 600px;
+}
 @media (max-width: 1300px) {
     .tamano-h-Inicio {
-        font-size: 55px;
+        font-size: 40px;
     }
 }
 @media (max-width: 1180px) {
     .tamano-h-Inicio {
-        font-size: 50px;
+        font-size: 40px;
+    }
+    .video{
+        width: 1000px;
+        height: 600px;
     }
 }
 @media (max-width: 1078px) {
     .tamano-h-Inicio {
-        font-size: 45px;
+        font-size: 40px;
+    }
+    .video{
+        width: 1000px;
+        height: 600px;
     }
 }
 @media (max-width: 976px) {
@@ -71,6 +83,10 @@
     .lista-inicio li {
         margin: 4%;
       }
+    .video{
+        width: 800px;
+        height: 600px;
+    }
 }
 @media (max-width: 400px) {
     .tamano-h-Inicio {
@@ -95,4 +111,8 @@
     .lista-inicio li {
         margin: 4%;
       }
+    .video{
+        width: 350px;
+        height: 400px;
+    }
 }
