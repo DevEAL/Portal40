@@ -51,4 +51,6 @@ var app = new Vue({
     data: {
     },
 vuetify: new Vuetify(),
+  mounted() {
+  },
 }).$mount('#app')

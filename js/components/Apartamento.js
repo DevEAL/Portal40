@@ -34,7 +34,7 @@ Vue.component("Apartamento", {
                             </v-col>
                         </v-col>
                         <v-col cols="12" xl="6" lg="6" md="6" sm="12" xs="12" class="slider-apartamento">
-                            <vueper-slides class="no-shadow" arrows-outside bullets-outside transition-speed="250" fixed-height="400px">
+                            <vueper-slides class="no-shadow" arrows-outside bullets-outside transition-speed="250" :fixed-height="anchos">
                                 <vueper-slide
                                 v-for="(slide, i) in slides1"
                                 :key="i"
@@ -50,7 +50,7 @@ Vue.component("Apartamento", {
                         </div>
                         <div>
                             <iframe v-if="estadoUnaHabitaciones" class="recorrido" frameborder="0" scrolling="auto" marginheight="0"
-                            marginwidth="0" src="http://www.visita360.co/360/toures/portal_40/index.htm"></iframe>
+                            marginwidth="0" src="360/1Habitacion/index.htm"></iframe>
                         </div>
                     </v-row>
                 </v-container>
@@ -72,7 +72,7 @@ Vue.component("Apartamento", {
                             </v-col>
                         </v-col>
                         <v-col cols="12" xl="6" lg="6" md="6" sm="12" xs="12" class="slider-apartamento">
-                            <vueper-slides class="no-shadow" arrows-outside bullets-outside transition-speed="250" fixed-height="400px">
+                            <vueper-slides class="no-shadow" arrows-outside bullets-outside transition-speed="250" :fixed-height="anchos">
                                 <vueper-slide
                                 v-for="(slide, i) in slides2"
                                 :key="i"
@@ -103,7 +103,7 @@ Vue.component("Apartamento", {
                             </v-row>
                         </v-col>
                         <v-col cols="12" xl="6" lg="6" md="6" sm="12" xs="12" class="slider-apartamento">
-                            <vueper-slides class="no-shadow" arrows-outside bullets-outside transition-speed="250" fixed-height="400px">
+                            <vueper-slides class="no-shadow" arrows-outside bullets-outside transition-speed="250" :fixed-height="anchos">
                                 <vueper-slide
                                 v-for="(slide, i) in slides3"
                                 :key="i"
@@ -119,7 +119,7 @@ Vue.component("Apartamento", {
                         </div>
                         <div>
                             <iframe v-if="estadoTresHabitaciones" class="recorrido" frameborder="0" scrolling="auto" marginheight="0"
-                            marginwidth="0" src="http://www.visita360.co/360/toures/portal_40/index.htm"></iframe>
+                            marginwidth="0" src="360/3Habitaciones/index.htm"></iframe>
                         </div>
                     </v-row>
                 </v-container>
@@ -129,6 +129,7 @@ Vue.component("Apartamento", {
     `,
     data() {
         return {
+            anchos: '400px',
             estadoUnaHabitaciones: false,
             estadoTresHabitaciones: false,
             slides1: [
@@ -193,17 +194,24 @@ Vue.component("Apartamento", {
               ]
         }
     },
+    mounted() {
+        if (screen.width < 400) {
+        this.anchos = '350px'
+        } else {
+        this.anchos = '400px'
+        }
+    },
     methods: {
         CambiarEstadoUnaHabitaciones() {
             if (screen.width < 400) {
-                window.location.href = "http://www.visita360.co/360/toures/portal_40/index.htm";
+                window.location.href = "360/1Habitacion/index.htm";
             } else {
                 this.estadoUnaHabitaciones = !this.estadoUnaHabitaciones
             }
         },
         CambiarEstadoTresHabitaciones() {
             if (screen.width < 400) {
-                window.location.href = "http://www.visita360.co/360/toures/portal_40/index.htm";
+                window.location.href = "360/3Habitaciones/index.htm";
             } else {
                 this.estadoTresHabitaciones = !this.estadoTresHabitaciones
             }

@@ -8,16 +8,16 @@ class Entity {
 
     public function __construct($table)
     {
-        // $option = parse_ini_file(__DIR__. './config-db.ini');
+        $options = parse_ini_file('config-db.ini');
 
         try {
             $this->_db = new PDO(
-                'mysql'.
-                ":host=localhost".
-                ";port=3306".
-                ";dbname=Portal40",
-                'root',
-                ''
+                $options['driver'] .
+                ":host={$options['host']}" .
+                ";port={$options['port']}" .
+                ";dbname={$options['name']}",
+                $options['user'],
+                $options['password']
             );
             $this->_db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $this->_db->exec("set names utf8");

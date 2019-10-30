@@ -6,7 +6,7 @@ Vue.component("Carousels", {
       class="spacing-playground black carousels-40"
       fluid
     >
-      <vueper-slides class="no-shadow" arrows-outside bullets-outside autoplay transition-speed="250" fixed-height="500px">
+      <vueper-slides class="no-shadow" arrows-outside bullets-outside autoplay transition-speed="250" :fixed-height="ancho">
         <vueper-slide
           v-for="(slide, i) in slides"
           :key="i"
@@ -18,17 +18,25 @@ Vue.component("Carousels", {
   `,
   data() {
       return {
+        ancho: '750px',
         slides: [
           {
-            src: 'img/galeria/bright-loft-apartment-PX363CC.jpg',
+            src: 'img/galeria/1.jpg',
           },
           {
-            src: 'img/galeria/bright-loft-apartment-PX363CC.jpg',
+            src: 'img/galeria/2.jpg',
           },
           {
-            src: 'img/bedroom-in-loft-PEKDXR7.jpg',
+            src: 'img/galeria/3.jpg',
           }
         ]
       }
+  },
+  mounted() {
+    if (screen.width < 400) {
+      this.ancho = '400px'
+    } else {
+      this.ancho = '770px'
+    }
   },
 })

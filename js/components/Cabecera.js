@@ -69,82 +69,78 @@ Vue.component("Cabecera", {
     </v-navigation-drawer>
     <v-dialog
       v-model="dialog"
-      max-width="500"
+      max-width="800"
     >
       <v-card>
         <v-card-title class="headline black white--text texto-opera">
         <img src="img/isotipo_color_m.svg" height="60px" width="80px"/>
           Formulario
         </v-card-title>
-
-        <v-card-text >
-          <v-col cols="12" sm="8" md="8">
-            <v-text-field
-                :color="color"
-                label="Nombre"
-                name="Nombre"
-                class="display-1 texto-opera"
-                onkeypress="if(this.value.length >= 30){return false}"
-                v-model="form.pt_name"
-                required
-            ></v-text-field>
-          </v-col>
-          <v-col cols="12" sm="8" md="8">
-            <v-text-field
-                :color="color"
-                label="Correo Electrónico"
-                name="Correo"
-                class="display-1 texto-opera "
-                onkeypress="if(this.value.length >= 40){return false}"
-                type="email"
-                v-model="form.pt_email"
-                required
-            ></v-text-field>
-          </v-col>
-          <v-col cols="12" sm="8" md="8">
-            <v-text-field
-                :color="color"
-                label="Celular"
-                name="Celular"
-                class="display-1 texto-opera"
-                onkeypress="if(this.value.length >= 10){return false}"
-                v-model="form.pt_phone"
-                required
-            ></v-text-field>
-          </v-col>
-          <v-col cols="12" sm="8" md="8">
-            <v-textarea
-                :color="color"
-                label="Mensaje"
-                class="display-1 texto-opera"
-                name="Mensaje"
-                v-model="form.pt_message"
-                required
-            ></v-textarea>
-          </v-col>
-        </v-card-text>
-
-        <v-card-actions>
-          <v-col cols="12" sm="8" md="8">
-            <v-btn
-              text
-              dark
-              @click="dialog = false"
-              class="ma-2 cyan "
-            >
-              Cerrar
-            </v-btn>
-            <v-btn class="ma-2 cyan " tile color="indigo" dark @click="Enviar">Enviar</v-btn>
-          </v-col>
-        </v-card-actions>
+          <v-container class="popup">
+            <v-row align="center" justify="center">
+              <v-col cols="12" sm="4" md="4">
+                <v-text-field
+                  :color="color"
+                  label="Nombre"
+                  name="Nombre"
+                  class="display-1 texto-opera"
+                  onkeypress="if(this.value.length >= 30){return false}"
+                  v-model="form.pt_name"
+                  required
+                ></v-text-field>
+              </v-col>
+              <v-col cols="12" sm="4" md="4">
+                <v-text-field
+                  :color="color"
+                  label="Correo Electrónico"
+                  name="Correo"
+                  class="display-1 texto-opera "
+                  onkeypress="if(this.value.length >= 40){return false}"
+                  type="email"
+                  v-model="form.pt_email"
+                  required
+                ></v-text-field>
+              </v-col>
+              <v-col cols="12" sm="4" md="4">
+                <v-text-field
+                  :color="color"
+                  label="Celular"
+                  name="Celular"
+                  class="display-1 texto-opera"
+                  onkeypress="if(this.value.length >= 10){return false}"
+                  v-model="form.pt_phone"
+                  required
+                ></v-text-field>
+              </v-col>
+              <v-col cols="12" sm="12" md="12">
+                <v-textarea
+                  :color="color"
+                  label="Mensaje"
+                  class="display-1 texto-opera"
+                  name="Mensaje"
+                  v-model="form.pt_message"
+                  required
+                ></v-textarea>
+              </v-col>
+              <v-col cols="12" sm="6" md="6" sm="3" xs="3">
+                <v-row align="center" justify="center">
+                  <v-btn dark @click="dialog = false" class="ma-2 cyan ">Cerrar</v-btn>
+                  <v-btn class="ma-2 cyan " tile color="indigo" dark @click="Enviar">Enviar</v-btn>
+                </v-row>
+              </v-col>
+            </v-row>
+          </v-container>
       </v-card>
     </v-dialog>
+    <v-overlay :value="overlay">
+      <v-progress-circular indeterminate size="64"></v-progress-circular>
+    </v-overlay>
     <v-snackbar
       v-model="snackbar"
-      color = "error"
+      :color = "colorAlert"
       top
     >
-      Algun campo vacio
+      {{ texto }}
     <v-btn
       text
       @click="snackbar = false"
@@ -162,9 +158,12 @@ Vue.component("Cabecera", {
         pt_phone: '',
         pt_message: ''
       },
+      colorAlert: "error",
+      texto: 'Algun campo vacio',
       color: "#04D7D7",
       menu: null,
       dialog: true,
+      overlay: false,
       snackbar: false,
       items: [
         { title: 'Inicio' , to:"/", divider: true, inset: true},
@@ -175,10 +174,15 @@ Vue.component("Cabecera", {
       ],
     }
   },
+  mounted() {
+    this.validar()
+  },
   methods: {
     Enviar() {
+      this.overlay = true
       if (this.form.pt_name == ''  || this.form.pt_email == '' || this.form.pt_phone == ''){
         this.snackbar = true
+        this.overlay = false
       } else {
         fetch('Api/public/Api/Inscription/Post',{
           method: 'POST',
@@ -194,8 +198,21 @@ Vue.component("Cabecera", {
               pt_email: '',
               pt_phone: '',
               pt_message: ''
-            };
+            }
+            this.dialog = false
+            sessionStorage.Inscripcion = true
+            this.overlay = false
+            this.snackbar = true
+            this.colorAlert = 'success'
+            this.texto = 'Mensaje Enviado'
           })
+      }
+    },
+    validar () {
+      if (sessionStorage.Inscripcion === true) {
+        this.dialog = false
+      } else {
+        this.dialog = true
       }
     }
   },

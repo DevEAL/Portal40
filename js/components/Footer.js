@@ -15,8 +15,8 @@ Vue.component("Footer40", {
                     <v-col cols="12" xl="4" lg="4" md="4" sm="12" xs="6" class="text-left texto-opera paddingFooter">
                         <p>S&#205;GUENOS</p>
                         <a class="socialmedia" href="https://api.whatsapp.com/send?phone=5732154159969" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                        <a class="socialmedia" href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a class="socialmedia" href="https://www.instagram.com/?hl=es-la" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a class="socialmedia" href="https://www.facebook.com/Portal-40-109346230467942/?__tn__=%2Cd%2CP-R&eid=ARCkh5xinRuuTd6Fsbp8bb3zYO01B5IaSoAVhuwrWNZN-LKQcEE265N-hzY-sWe4zp8E3tGExqUFrwd6" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="socialmedia" href="https://www.instagram.com/portal__40/" target="_blank"><i class="fab fa-instagram"></i></a>
                     </v-col>
                 </v-row>
                 <v-row lg="12">

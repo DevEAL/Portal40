@@ -1,6 +1,9 @@
 .cabecera{
     z-index: 1000;
 }
+.popup{
+    padding: 40px;
+}
     .letra-menu {
         font-size: 17pt;
     }
@@ -76,10 +79,16 @@
         .letra-menu {
             font-size: 12pt;
         }
+        .popup{
+            padding: 10px;
+        }
     }
     @media(max-width: 360px){
         .v-application .py-10 {
             padding-top: 15px!important;
             padding-bottom: 15px!important;
+        }
+        .popup{
+            padding: 10px;
         }
     }

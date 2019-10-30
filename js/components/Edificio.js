@@ -35,7 +35,7 @@ Vue.component("Edificio", {
                 </div>
                 <div>
                     <iframe v-if="recorrido" class="recorrido" frameborder="0" scrolling="auto" marginheight="0"
-                    marginwidth="0" src="http://www.visita360.co/360/toures/portal_40/index.htm"></iframe>
+                    marginwidth="0" src="360/edificio/index.htm"></iframe>
                 </div>
             </v-col>
             <v-col cols="12" class="white">
@@ -66,27 +66,27 @@ Vue.component("Edificio", {
             recorrido: false,
             items: [
                 {
-                    src: 'img/edificio/friends-on-the-rooftop-SATFKMX.jpg',
+                    src: 'img/edificio/terraza.jpg',
                     titulo: 'Terraza'
                 },
                 {
-                    src: 'img/edificio/roofed-office-building-entrance-at-night-PCZQRCE.jpg',
+                    src: 'img/edificio/Corredor.jpg',
                     titulo: 'Corredor Verde'
                 },
                 {
-                    src: 'img/edificio/friends-with-popcorn-and-drinks-talking-at-home-PNJPFZB.jpg',
+                    src: 'img/edificio/Sala.jpg',
                     titulo: 'Sala común'
                 },
                 {
-                    src: 'img/edificio/laundry-machines-at-laundromat-shop-PWQ2LMD.jpg',
+                    src: 'img/edificio/Lavanderia.jpg',
                     titulo: 'Lavanderia'
                 },
                 {
-                    src: 'img/edificio/security-camera-P66JM58.jpg',
+                    src: 'img/edificio/Vigilancia.jpg',
                     titulo: 'Vigilancia 24 horas'
                 },
                 {
-                    src: 'img/edificio/parking-garage-underground-interior-P9N6UAX.jpg',
+                    src: 'img/edificio/Parqueadero.jpg',
                     titulo: 'Parqueadero'
                 }
             ]
@@ -95,7 +95,7 @@ Vue.component("Edificio", {
     methods: {
         estado() {
             if (screen.width < 400) {
-                window.location.href = "http://www.visita360.co/360/toures/portal_40/index.htm";
+                window.location.href = "360/edificio/index.htm";
             } else {
                 this.recorrido = !this.recorrido
             }

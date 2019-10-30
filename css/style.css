@@ -29,6 +29,9 @@
   width: 25%;
   height: 6px; }
 
+.formulario {
+  margin-top: -12px; }
+
 @media (max-width: 564px) {
   .divisor {
     padding: 0;
@@ -43,6 +46,9 @@
     height: 5px; } }
 .cabecera {
   z-index: 1000; }
+
+.popup {
+  padding: 40px; }
 
 .letra-menu {
   font-size: 17pt; }
@@ -107,11 +113,17 @@
     display: inline; }
 
   .letra-menu {
-    font-size: 12pt; } }
+    font-size: 12pt; }
+
+  .popup {
+    padding: 10px; } }
 @media (max-width: 360px) {
   .v-application .py-10 {
     padding-top: 15px !important;
-    padding-bottom: 15px !important; } }
+    padding-bottom: 15px !important; }
+
+  .popup {
+    padding: 10px; } }
 .footer .v-tabs-slider {
   background-color: #000 !important; }
 .footer .container {
@@ -864,7 +876,7 @@
   width: 600px;
   height: 550px; }
 
-@media (max-width: 1639px) {
+@media (max-width: 1700px) {
   .letra-contacto {
     font-size: 35pt; }
 
