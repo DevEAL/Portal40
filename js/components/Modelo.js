@@ -26,8 +26,8 @@ Vue.component("Modelo", {
                                     <img src="img/model/local.svg" height="150px" width="150px"/>
                                 </div>
                                 <div>
-                                    <p class="color-texto-rojo letra-Titulo-Iconos ">1 LOCAL COMERCIAL</p>
-                                    <p class="black--text">recibe ingresos por arriendo de espacio comercial sobre la carrera 13, actualmente una inmobiliaria<span class="color-texto-azul">*</span><span class="color-texto-rojo">*</span>.</p>
+                                    <p class="color-texto-rojo letra-Titulo-Iconos ">1 ESPACIO  COMERCIAL</p>
+                                    <p class="black--text">recibe ingresos por arriendo de espacio comercial sobre la carrera 13<span class="color-texto-azul">*</span><span class="color-texto-rojo">*</span>.</p>
                                 </div>
                             </v-container>
                         </v-col>
@@ -59,8 +59,8 @@ Vue.component("Modelo", {
                                     <img src="img/model/local2.svg" height="150px" width="150px"/>
                                 </div>
                                 <div>
-                                    <p class="color-texto-rojo letra-Titulo-Iconos ">1 LOCAL COMERCIAL</p>
-                                    <p class="black--text">recibe ingresos por arriendo de espacio comercial, actualmente para venta de bicicletas<span class="color-texto-azul">*</span><span class="color-texto-rojo">*</span>.</p>
+                                    <p class="color-texto-rojo letra-Titulo-Iconos ">1 ESPACIO COMERCIAL</p>
+                                    <p class="black--text">recibe ingresos por arriendo de espacio comercial<span class="color-texto-azul">*</span><span class="color-texto-rojo">*</span>.</p>
                                 </div>
                             </v-container>
                         </v-col>
@@ -92,7 +92,7 @@ Vue.component("Modelo", {
                     </ul>
                 </v-container>
             </v-col>
-            <v-col cols="12"  class="seccion1 lighten-3 text-center texto-hat seccion-tres-Modelo">
+            <v-col cols="12"  class="seccion1 lighten-1 text-center texto-hat seccion-tres-Modelo">
                 <v-row lg="12" align="center" justify="center">
                     <v-col cols="12" xl="12" lg="12" md="12" sm="12" xs="12">
                         <p>INVIERTE EN <span class="color-texto-rojo">PORTAL 40 <br /> DONDE 1 SON 5</span></p>

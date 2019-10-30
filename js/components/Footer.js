@@ -10,11 +10,11 @@ Vue.component("Footer40", {
                     </v-col>
                     <v-col cols="12" xl="4" lg="4" md="4" sm="12" xs="6" class="text-left texto-opera paddingFooter">
                         <p>CONTACTANOS</p>
-                        <p>Correo@correo.com <br/>Carrera 13 # 40c - 10 Chapinero Central <br/>Bogotá - Colombia <br/> (+571) 555 55 55</p>
+                        <p>Correo@correo.com <br/>Carrera 13 # 40c - 20 Chapinero Central <br/>Bogotá - Colombia <br/> (+57) 315-145-9969</p>
                     </v-col>
                     <v-col cols="12" xl="4" lg="4" md="4" sm="12" xs="6" class="text-left texto-opera paddingFooter">
                         <p>S&#205;GUENOS</p>
-                        <a class="socialmedia" href="https://web.whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a class="socialmedia" href="https://api.whatsapp.com/send?phone=5732154159969" target="_blank"><i class="fab fa-whatsapp"></i></a>
                         <a class="socialmedia" href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
                         <a class="socialmedia" href="https://www.instagram.com/?hl=es-la" target="_blank"><i class="fab fa-instagram"></i></a>
                     </v-col>
@@ -27,7 +27,7 @@ Vue.component("Footer40", {
                     </v-col>
                 </v-row>
                 <v-row align="center" justify="center">
-                    <img src="img/logoblanco.svg" height="150px" width="150px"/>
+                    <img src="img/logo_white_footer.svg" height="150px" width="150px"/>
                 </v-row>
                 <v-row>
                     <v-col cols="12">

@@ -22,9 +22,7 @@ Vue.component("Edificio", {
                             :key="i"
                         >
                             <v-col>
-                                <v-img :src="item.src" height="300px" with="100px"/>
-                            </v-col>
-                            <v-col>
+                                <v-img :src="item.src" class="img-edificio"/>
                                 <p class="black--text text-center texto-opera letra-edificio">{{ item.titulo }}</p>
                             </v-col>
                         </v-col>
@@ -33,7 +31,11 @@ Vue.component("Edificio", {
             </v-col>
             <v-col cols="12" class="white color_fondo text-center texto-hat letraTituloE">
                 <div class="btn-apartamento texto-hat">
-                <a href="" target="_blank"><span>RECORRIDO VIRTUAL</span> CONOCE EL EDIFICIO</a>
+                <a @click="estado"><span>RECORRIDO VIRTUAL</span> CONOCE EL EDIFICIO</a>
+                </div>
+                <div>
+                    <iframe v-if="recorrido" class="recorrido" frameborder="0" scrolling="auto" marginheight="0"
+                    marginwidth="0" src="http://www.visita360.co/360/toures/portal_40/index.htm"></iframe>
                 </div>
             </v-col>
             <v-col cols="12" class="white">
@@ -61,6 +63,7 @@ Vue.component("Edificio", {
     `,
     data() {
         return {
+            recorrido: false,
             items: [
                 {
                     src: 'img/edificio/friends-on-the-rooftop-SATFKMX.jpg',
@@ -87,6 +90,15 @@ Vue.component("Edificio", {
                     titulo: 'Parqueadero'
                 }
             ]
+        }
+    },
+    methods: {
+        estado() {
+            if (screen.width < 400) {
+                window.location.href = "http://www.visita360.co/360/toures/portal_40/index.htm";
+            } else {
+                this.recorrido = !this.recorrido
+            }
         }
     },
 })
