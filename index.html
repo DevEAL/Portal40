@@ -16,30 +16,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
 </head>
 <body>
-	<!-- Cuerpo Web -->
+
   <div id="app">
-    <!-- Inicio Cabecera -->
+
 
 		<v-app>
       <Cabecera></Cabecera>
-		<!-- Fin Cabecera -->
-
-		<!-- Inicio Contenido -->
-
 		<v-content>
 			<div fluid class="black">
 				<router-view>
 				</router-view>
-			<!-- Seccion cambiante -->
 			</div>
 		</v-content>
-		<!-- Fin Contenido -->
 		</v-app>
   </div>
-	<!-- Fin Cuerpo Web-->
-
-	<!-- Comienzo Inicio -->
-
 	<template id="index">
 		<div>
 			<Carousels></Carousels>
@@ -48,11 +38,6 @@
 			<Footer40></Footer40>
 		</div>
 	</template>
-
-	<!-- Fin Inicio -->
-
-	<!-- Inicio Modelo de Negocio -->
-
 	<template id="modelo">
 		<div>
 			<Carousels></Carousels>
@@ -61,11 +46,6 @@
 			<Footer40></Footer40>
 		</div>
 	</template>
-
-	<!-- Fin Modelo de Negocio -->
-
-	<!-- Inicio Apartamento -->
-
 	<template id="apartamento">
 		<div>
 			<Carousels></Carousels>
@@ -75,10 +55,6 @@
 		</div>
 	</template>
 
-	<!-- Fin Apartamento -->
-
-	<!-- Inicio Edificio -->
-
 	<template id="edificio">
 		<div>
 			<Carousels></Carousels>
@@ -87,10 +63,6 @@
 			<Footer40></Footer40>
 		</div>
 	</template>
-
-	<!-- Fin Edificio -->
-
-	<!-- Inicio contacto -->
 
 	<template id="contacto">
 		<div>
@@ -112,9 +84,6 @@
 			</v-row>
 		</div>
 	</template>
-
-	<!-- Fin contacto -->
-
   <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
 	<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
