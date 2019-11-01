@@ -48,7 +48,7 @@ class Entity {
 
     public function where ($conditions){
         $str_conditions = is_string($conditions) ? $conditions : $this->joinFields($conditions, ' AND ');
-        $this->_sql .= "WHERE {$str_conditions}";
+        $this->_sql .= " WHERE {$str_conditions}";
         return $this;
     }
 

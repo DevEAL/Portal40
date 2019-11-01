@@ -24,7 +24,7 @@ Vue.component("Formulario", {
                                 :color="color"
                                 label="Nombre"
                                 name="Nombre"
-                                class="display-1 texto-opera"
+                                class="texto-opera"
                                 onkeypress="if(this.value.length >= 30){return false}"
                                 v-model="form.pt_name"
                                 required
@@ -35,7 +35,7 @@ Vue.component("Formulario", {
                                 :color="color"
                                 label="Correo Electrónico"
                                 name="Correo"
-                                class="display-1 texto-opera "
+                                class="texto-opera "
                                 onkeypress="if(this.value.length >= 40){return false}"
                                 type="email"
                                 v-model="form.pt_email"
@@ -47,7 +47,7 @@ Vue.component("Formulario", {
                                 :color="color"
                                 label="Celular"
                                 name="Celular"
-                                class="display-1 texto-opera"
+                                class="texto-opera"
                                 onkeypress="if(this.value.length >= 10){return false}"
                                 v-model="form.pt_phone"
                                 required
@@ -57,7 +57,7 @@ Vue.component("Formulario", {
                             <v-textarea
                                 :color="color"
                                 label="Mensaje"
-                                class="display-1 texto-opera"
+                                class="texto-opera"
                                 name="Mensaje"
                                 v-model="form.pt_message"
                                 required

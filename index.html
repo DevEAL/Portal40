@@ -10,8 +10,8 @@
   <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
-	<link href="https://unpkg.com/vueperslides/dist/vueperslides.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Red+Hat+Display&display=swap" rel="stylesheet">
+	<link href="css/vueperslides.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
 </head>
@@ -22,8 +22,9 @@
       <Cabecera></Cabecera>
 		<v-content>
 			<div fluid class="black">
-				<router-view>
-				</router-view>
+				<transition name="slide-fade" mode="out-in">
+					<router-view></router-view>
+				</transition>
 			</div>
 		</v-content>
 		</v-app>
@@ -52,15 +53,15 @@
 			<Footer40></Footer40>
 		</div>
 	</template>
-
-	<template id="edificio">
-		<div>
-			<Carousels></Carousels>
-			<Edificio></Edificio>
-			<Formulario></Formulario>
-			<Footer40></Footer40>
-		</div>
-	</template>
+	
+		<template id="edificio">
+			<div>
+				<Carousels></Carousels>
+				<Edificio></Edificio>
+				<Formulario></Formulario>
+				<Footer40></Footer40>
+			</div>
+		</template>
 
 	<template id="contacto">
 		<div>

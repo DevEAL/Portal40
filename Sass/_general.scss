@@ -31,6 +31,16 @@
 .formulario{
   margin-top: -12px;
 }
+.slide-fade-enter-active {
+  transition: all .8s ease;
+}
+.slide-fade-leave-active {
+  transition: all .6s cubic-bezier(.17,.67,.83,.67);
+}
+.slide-fade-enter, .slide-fade-leave-to{
+  transform: translateY(800px);
+  opacity: 0;
+}
 @media (max-width: 564px) {
   .divisor {
     padding: 0;
@@ -47,3 +57,4 @@
     height: 5px;
   }
 }
+

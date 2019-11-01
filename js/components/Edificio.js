@@ -21,10 +21,8 @@ Vue.component("Edificio", {
                             v-for="(item,i) in items"
                             :key="i"
                         >
-                            <v-col>
-                                <v-img :src="item.src" class="img-edificio"/>
-                                <p class="black--text text-center texto-opera letra-edificio">{{ item.titulo }}</p>
-                            </v-col>
+                            <v-img :src="item.src" class="img-edificio"/>
+                            <p class="black--text text-center texto-opera letra-edificio">{{ item.titulo }}</p>
                         </v-col>
                     </v-row>
                 </v-container>

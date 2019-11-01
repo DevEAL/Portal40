@@ -1,15 +1,16 @@
 .carousels-40 {
     padding: 60px 100px !important;
-    .ex--center-mode {
-        width: 600px;
-        max-width: 100%;
-        margin: auto;
-      }
+
     .vueperslides__bullet {
         border: 1px solid $color-Rojo !important;
         background-color: rgba($color: $color-Rojo, $alpha: 0.5) !important;
     }
 }
+.ex--center-mode {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+  }
 .theme--light.v-application {
     color: $color-Rojo;
 }

@@ -50,7 +50,5 @@ var app = new Vue({
   el: '#app',
     data: {
     },
-vuetify: new Vuetify(),
-  mounted() {
-  },
+  vuetify: new Vuetify(),
 }).$mount('#app')

@@ -6,7 +6,7 @@ Vue.component("Carousels", {
       class="spacing-playground black carousels-40"
       fluid
     >
-      <vueper-slides class="no-shadow" arrows-outside bullets-outside autoplay transition-speed="250" :fixed-height="ancho">
+      <vueper-slides class="no-shadow" arrows-outside bullets-outside autoplay transition-speed="250" :fixed-height="ancho" >
         <vueper-slide
           v-for="(slide, i) in slides"
           :key="i"
@@ -21,13 +21,16 @@ Vue.component("Carousels", {
         ancho: '750px',
         slides: [
           {
-            src: 'img/galeria/1.jpg',
+            src: 'img/galeria/1.png',
           },
           {
-            src: 'img/galeria/2.jpg',
+            src: 'img/galeria/2.png',
           },
           {
-            src: 'img/galeria/3.jpg',
+            src: 'img/galeria/3.png',
+          },
+          {
+            src: 'img/galeria/4.png',
           }
         ]
       }
@@ -36,7 +39,7 @@ Vue.component("Carousels", {
     if (screen.width < 400) {
       this.ancho = '400px'
     } else {
-      this.ancho = '770px'
+      this.ancho = '750px'
     }
   },
 })

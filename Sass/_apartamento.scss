@@ -27,6 +27,7 @@
     margin: auto;
     .vueperslides{
         margin: auto;
+        background-size: contain !important;
     }
     .vueperslides__bullet {
         border: 1px solid $color-Azul !important;
@@ -37,6 +38,9 @@
         max-width: 100%;
         margin: auto;
     }
+}
+.vueperslide {
+    background-size: contain !important;
 }
 .slider-apartamento .theme--light .v-application {
     color: $color-Azul !important;

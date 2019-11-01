@@ -5,6 +5,12 @@ use PHPMailer\PHPMailer\Exception;
 
   class SendMail{
     static function EnviarCorreo($asunto, $body){
+
+        $db = new Entity('pt_Parameters');
+        $db->select('value')
+            ->where('name = "Email_contacto" AND status = 1');
+        $sth = $db->execute();
+        $email = $sth->fetch(PDO::FETCH_OBJ);
         $mail = new PHPMailer(true);
         try {
             //Server settings
@@ -19,7 +25,7 @@ use PHPMailer\PHPMailer\Exception;
             //Recipients
             $mail->setFrom('sendohlala@gmail.com', 'Admin Portal');
             // $mail->addAddress('ohlalaemprende@gmail.com');     // Add a recipient
-            $mail->addAddress('backend@enalgunlugarestudio.com');             // Name is optional
+            $mail->addAddress($email->value);             // Name is optional
             // $mail->addAddress('desarrollo@enalgunlugarestudio.com');
             // // Attachments
             // $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments

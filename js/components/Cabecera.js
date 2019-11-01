@@ -73,40 +73,43 @@ Vue.component("Cabecera", {
     >
       <v-card>
         <v-card-title class="headline black white--text texto-opera">
-        <img src="img/isotipo_color_m.svg" height="60px" width="80px"/>
-          Formulario
+          <img src="img/isotipo_color_m.svg" height="60px" width="80px"/>
+          {{ titulo }}
         </v-card-title>
           <v-container class="popup">
             <v-row align="center" justify="center">
-              <v-col cols="12" sm="4" md="4">
+              {{ message }}
+            </v-row>
+            <v-row align="center" justify="center">
+              <v-col cols="12" sm="12" md="12">
                 <v-text-field
                   :color="color"
                   label="Nombre"
                   name="Nombre"
-                  class="display-1 texto-opera"
+                  class="texto-opera"
                   onkeypress="if(this.value.length >= 30){return false}"
                   v-model="form.pt_name"
                   required
                 ></v-text-field>
               </v-col>
-              <v-col cols="12" sm="4" md="4">
+              <v-col cols="12" sm="6" md="6">
                 <v-text-field
                   :color="color"
                   label="Correo Electrónico"
                   name="Correo"
-                  class="display-1 texto-opera "
+                  class="texto-opera "
                   onkeypress="if(this.value.length >= 40){return false}"
                   type="email"
                   v-model="form.pt_email"
                   required
                 ></v-text-field>
               </v-col>
-              <v-col cols="12" sm="4" md="4">
+              <v-col cols="12" sm="6" md="6">
                 <v-text-field
                   :color="color"
                   label="Celular"
                   name="Celular"
-                  class="display-1 texto-opera"
+                  class="texto-opera"
                   onkeypress="if(this.value.length >= 10){return false}"
                   v-model="form.pt_phone"
                   required
@@ -116,7 +119,7 @@ Vue.component("Cabecera", {
                 <v-textarea
                   :color="color"
                   label="Mensaje"
-                  class="display-1 texto-opera"
+                  class="texto-opera"
                   name="Mensaje"
                   v-model="form.pt_message"
                   required
@@ -158,6 +161,8 @@ Vue.component("Cabecera", {
         pt_phone: '',
         pt_message: ''
       },
+      titulo: 'Titulo',
+      message: 'texto de mensaje',
       colorAlert: "error",
       texto: 'Algun campo vacio',
       color: "#04D7D7",
@@ -209,7 +214,7 @@ Vue.component("Cabecera", {
       }
     },
     validar () {
-      if (sessionStorage.Inscripcion === true) {
+      if (sessionStorage.Inscripcion) {
         this.dialog = false
       } else {
         this.dialog = true
