@@ -73,8 +73,19 @@ Vue.component("Cabecera", {
     >
       <v-card>
         <v-card-title class="headline black white--text texto-opera">
-          <img src="img/isotipo_color_m.svg" height="60px" width="80px"/>
-          {{ titulo }}
+          <v-row align="center" justify="center">
+            <v-col cols="12" sm="4" md="4">
+              <img src="img/isotipo_color_m.svg" height="60px" width="80px"/>
+            </v-col>
+            <v-col cols="12" sm="4" md="4">
+              {{ titulo }}
+            </v-col>
+            <v-col cols="12" sm="4" md="4">
+              <v-btn text icon color="white" class="btn" @click="dialog = false">
+                <v-icon>fas fa-times</v-icon>
+              </v-btn>
+            </v-col>
+          </v-row>
         </v-card-title>
           <v-container class="popup">
             <v-row align="center" justify="center">
@@ -127,7 +138,6 @@ Vue.component("Cabecera", {
               </v-col>
               <v-col cols="12" sm="6" md="6" sm="3" xs="3">
                 <v-row align="center" justify="center">
-                  <v-btn dark @click="dialog = false" class="ma-2 cyan ">Cerrar</v-btn>
                   <v-btn class="ma-2 cyan " tile color="indigo" dark @click="Enviar">Enviar</v-btn>
                 </v-row>
               </v-col>
@@ -146,9 +156,10 @@ Vue.component("Cabecera", {
       {{ texto }}
     <v-btn
       text
+      icon
       @click="snackbar = false"
     >
-      Cerrar
+      <v-icon>fas fa-times</v-icon>
     </v-btn>
     </v-snackbar>
   </div>

@@ -33,7 +33,7 @@ class ModelInscription {
             $db->Insert($arrayBody);
             $id = $db->execute_id();
 
-            $asunto = 'Solicitud Inscripción' . $id;
+            $asunto = 'Formulario Promoción' . $id;
 
             $template = CrearHTML::Html($body, $asunto);
 

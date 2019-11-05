@@ -14,6 +14,9 @@ require __DIR__ . '/../src/model/Inscription.php';
 require __DIR__ . '/../src/controller/Contact.php';
 require __DIR__ . '/../src/model/Contact.php';
 
+require __DIR__ . '/../src/controller/enlaces.php';
+require __DIR__ . '/../src/model/enlaces.php';
+
 $app = new \Slim\App;
 
 

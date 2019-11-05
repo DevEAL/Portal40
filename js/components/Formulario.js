@@ -77,9 +77,10 @@ Vue.component("Formulario", {
                 Algun campo vacio
             <v-btn
                 text
+                icon
                 @click="snackbar = false"
             >
-                Cerrar
+                <v-icon>fas fa-times</v-icon>
             </v-btn>
             </v-snackbar>
         </v-row>

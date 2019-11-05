@@ -10,13 +10,13 @@ Vue.component("Footer40", {
                     </v-col>
                     <v-col cols="12" xl="4" lg="4" md="4" sm="12" xs="6" class="text-left texto-opera paddingFooter">
                         <p>CONTACTANOS</p>
-                        <p>Correo@correo.com <br/>Carrera 13 # 40c - 20 Chapinero Central <br/>Bogotá - Colombia <br/> (+57) 315-145-9969</p>
+                        <p>{{ correo.value }} <br/>Carrera 13 # 40c - 20 Chapinero Central <br/>Bogotá - Colombia <br/> (+57) 315-145-9969</p>
                     </v-col>
                     <v-col cols="12" xl="4" lg="4" md="4" sm="12" xs="6" class="text-left texto-opera paddingFooter">
                         <p>S&#205;GUENOS</p>
-                        <a class="socialmedia" href="https://api.whatsapp.com/send?phone=5732154159969" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                        <a class="socialmedia" href="https://www.facebook.com/Portal-40-109346230467942/?__tn__=%2Cd%2CP-R&eid=ARCkh5xinRuuTd6Fsbp8bb3zYO01B5IaSoAVhuwrWNZN-LKQcEE265N-hzY-sWe4zp8E3tGExqUFrwd6" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a class="socialmedia" href="https://www.instagram.com/portal__40/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a class="socialmedia" :href="socialmedia.whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a class="socialmedia" :href="socialmedia.fecebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="socialmedia" :href="socialmedia.instagram" target="_blank"><i class="fab fa-instagram"></i></a>
                     </v-col>
                 </v-row>
                 <v-row lg="12">
@@ -26,7 +26,7 @@ Vue.component("Footer40", {
                     <v-col cols="12" xl="12" lg="12" md="12" sm="12" xs="12" class="center">
                     </v-col>
                 </v-row>
-                <v-row align="center" justify="center">
+                <v-row align="center" justify="center" class="logoF">
                     <img src="img/logo_white_footer.svg" height="150px" width="150px"/>
                 </v-row>
                 <v-row>
@@ -53,5 +53,27 @@ Vue.component("Footer40", {
                 </v-row>
             </v-container>
 		</v-footer>
-    `
+    `,
+    data() {
+      return {
+        socialmedia: {
+          whatsapp: 'https://api.whatsapp.com/send?phone=5732154159969',
+          fecebook: 'https://www.facebook.com/Portal-40-109346230467942/?__tn__=%2Cd%2CP-R&eid=ARCkh5xinRuuTd6Fsbp8bb3zYO01B5IaSoAVhuwrWNZN-LKQcEE265N-hzY-sWe4zp8E3tGExqUFrwd6',
+          instagram: 'https://www.instagram.com/portal__40/'
+        },
+        correo: []
+      }
+    },
+    mounted() {
+      this.consultar()
+    },
+    methods: {
+      consultar(){
+        fetch('Api/public/Api/enlaces')
+          .then(res => res.json())
+          .then(data => {
+            this.correo = data.data.data
+          })
+      }
+    },
 })
