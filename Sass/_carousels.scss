@@ -43,8 +43,8 @@
     padding: 1%;
     z-index: 10;
     position: fixed;
-    left: 30px;
-    top: 600px;
+    left: 10px;
+    top: 860px;
     img{
         width: 80px;
         height: 80px;
@@ -53,6 +53,22 @@
     img:hover{
         width: 90px;
         height: 90px;
+    }
+}
+@media (max-width: 1440px) {
+    .btn-whatapp{
+        top: 800px;
+    }
+}
+@media(max-width: 1367px){
+    .btn-whatapp{
+        left: 5px;
+        top: 650px;
+    }
+}
+@media (max-width: 1290px) {
+    .btn-whatapp{
+        top: 690px;
     }
 }
 @media(max-width: 400px){
@@ -115,5 +131,36 @@
             width: 60px;
             height: 60px;
         }
+    }
+}
+@media(max-width: 360px){
+    .bnt-float{
+        padding: 2%;
+        top: 20%;
+        img{
+            width: 40px;
+            height: 40px;
+        }
+        img:hover{
+            width: 40px;
+            height: 40px;
+        }
+    }
+    .btn-whatapp{
+        padding: 1%;
+        top: 450px;
+        img{
+            width: 50px;
+            height: 50px;
+        }
+        img:hover{
+            width: 50px;
+            height: 50px;
+        }
+    }
+}
+@media(max-width: 290px){
+    .btn-whatapp {
+        top: 530px;
     }
 }

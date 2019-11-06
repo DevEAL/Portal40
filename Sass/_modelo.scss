@@ -110,6 +110,9 @@
             left: 15%;
         }
     }
+    .margenm{
+        padding-left: 5% !important;
+    }
 }
 @media (max-width: 1256px) {
     .titulo-Modelo {
@@ -210,5 +213,10 @@
             height: 30px;
             left: 10%;
         }
+    }
+}
+@media (max-width: 290px) {
+    .margenm{
+        padding: 5% !important;
     }
 }

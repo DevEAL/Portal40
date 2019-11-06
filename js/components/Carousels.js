@@ -18,7 +18,7 @@ Vue.component("Carousels", {
   `,
   data() {
       return {
-        ancho: '750px',
+        ancho: '',
         slides: [
           {
             src: 'img/galeria/1.png',
@@ -36,10 +36,12 @@ Vue.component("Carousels", {
       }
   },
   mounted() {
-    if (screen.width < 400) {
-      this.ancho = '400px'
+    if (screen.width < 1370) {
+      this.ancho = '560px'
+    } else if (screen.width < 400) {
+      this.ancho = '200px'
     } else {
-      this.ancho = '750px'
+      this.ancho = '760px'
     }
   },
 })

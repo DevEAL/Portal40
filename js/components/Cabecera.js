@@ -71,16 +71,16 @@ Vue.component("Cabecera", {
       v-model="dialog"
       max-width="800"
     >
-      <v-card>
+      <v-card class="pop">
         <v-card-title class="headline black white--text texto-opera">
           <v-row align="center" justify="center">
-            <v-col cols="12" sm="4" md="4">
-              <img src="img/isotipo_color_m.svg" height="60px" width="80px"/>
+            <v-col cols="3" sm="4" md="4">
+              <img src="img/isotipo_color_m.svg" height="30px" width="50px"/>
             </v-col>
-            <v-col cols="12" sm="4" md="4">
+            <v-col cols="5" sm="4" md="4">
               {{ titulo }}
             </v-col>
-            <v-col cols="12" sm="4" md="4">
+            <v-col cols="4" sm="4" md="4">
               <v-btn text icon color="white" class="btn" @click="dialog = false">
                 <v-icon>fas fa-times</v-icon>
               </v-btn>
