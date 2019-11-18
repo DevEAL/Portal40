@@ -16,7 +16,7 @@ Vue.component("Modelo", {
                                 </div>
                                 <div>
                                     <p class="color-texto-rojo letra-Titulo-Iconos ">RENTA</p>
-                                    <p class="black--text">recibe ingresos por arriendo de tu apartamento desde el día que lo recibes. Local comercial<span class="color-texto-azul">*</span>.</p>
+                                    <p class="black--text">Recibe ingresos por arriendo de tu apartamento desde el día que lo recibes. Local comercial<span class="color-texto-azul">*</span>.</p>
                                 </div>
                             </v-container>
                         </v-col>
@@ -27,7 +27,7 @@ Vue.component("Modelo", {
                                 </div>
                                 <div>
                                     <p class="color-texto-rojo letra-Titulo-Iconos ">1 ESPACIO  COMERCIAL</p>
-                                    <p class="black--text">recibe ingresos por arriendo de espacio comercial sobre la carrera 13<span class="color-texto-azul">*</span><span class="color-texto-rojo">*</span>.</p>
+                                    <p class="black--text">Recibe ingresos por arriendo de espacio comercial sobre la carrera 13<span class="color-texto-azul">*</span><span class="color-texto-rojo">*</span>.</p>
                                 </div>
                             </v-container>
                         </v-col>
@@ -60,7 +60,7 @@ Vue.component("Modelo", {
                                 </div>
                                 <div>
                                     <p class="color-texto-rojo letra-Titulo-Iconos ">1 ESPACIO COMERCIAL</p>
-                                    <p class="black--text">recibe ingresos por arriendo de espacio comercial<span class="color-texto-azul">*</span><span class="color-texto-rojo">*</span>.</p>
+                                    <p class="black--text">Recibe ingresos por arriendo de espacio comercial<span class="color-texto-azul">*</span><span class="color-texto-rojo">*</span>.</p>
                                 </div>
                             </v-container>
                         </v-col>

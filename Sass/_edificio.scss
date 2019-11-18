@@ -11,31 +11,79 @@
     .item1::before{
         content: "●";
         display: inline-block;
-        color: $color-Orange;
+        color: $punto-1;
         font-size: 40px;
     }
     .item2::before{
         content: "●";
         display: inline-block;
-        color: $color-Azul-Punto;
+        color: $punto-2;
         font-size: 40px;
     }
     .item3::before{
         content: "●";
         display: inline-block;
-        color: $color-Morado;
+        color: $punto-3;
         font-size: 40px;
     }
     .item4::before{
         content: "●";
         display: inline-block;
-        color: $color-Black;
+        color: $punto-4;
         font-size: 40px;
     }
     .item5::before{
         content: "●";
         display: inline-block;
-        color: $color-Rosado;
+        color: $punto-5;
+        font-size: 40px;
+    }
+    .item6::before{
+        content: "●";
+        display: inline-block;
+        color: $punto-6;
+        font-size: 40px;
+    }
+    .item7::before{
+        content: "●";
+        display: inline-block;
+        color: $punto-7;
+        font-size: 40px;
+    }
+    .item8::before{
+        content: "●";
+        display: inline-block;
+        color: $punto-8;
+        font-size: 40px;
+    }
+    .item9::before{
+        content: "●";
+        display: inline-block;
+        color: $punto-9;
+        font-size: 40px;
+    }
+    .item10::before{
+        content: "●";
+        display: inline-block;
+        color: $punto-10;
+        font-size: 40px;
+    }
+    .item11::before{
+        content: "●";
+        display: inline-block;
+        color: $punto-11;
+        font-size: 40px;
+    }
+    .item12::before{
+        content: "●";
+        display: inline-block;
+        color: $punto-12;
+        font-size: 40px;
+    }
+    .item13::before{
+        content: "●";
+        display: inline-block;
+        color: $punto-13;
         font-size: 40px;
     }
 }
@@ -59,6 +107,9 @@
         width: 1200px;
         height: 600px;
     }
+    .letra-Texto-E {
+        font-size: 20pt;
+    }
 }
 @media(max-width: 1263px){
     .letra-Titulo-edifico {
@@ -66,6 +117,9 @@
     }
     .letra-edificio {
         font-size: 25pt;
+    }
+    .letra-Texto-E {
+        font-size: 20pt;
     }
     .recorrido {
         width: 1000px;

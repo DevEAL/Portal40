@@ -61,9 +61,9 @@ Vue.component("Cabecera", {
       </v-list>
       <v-container>
           <v-row>
-              <v-col cols="12">
-                <p class="texto-opera text-right overline grey--text">Copyright &#169; 2019. Power By En Alg&uacute;n Lugar</p>
-              </v-col>
+            <v-col cols="12">
+              <p class="texto-opera text-right overline grey--text">Copyright &#169; 2019. Power By En Alg&uacute;n Lugar</p>
+            </v-col>
           </v-row>
       </v-container>
     </v-navigation-drawer>
@@ -172,7 +172,7 @@ Vue.component("Cabecera", {
         pt_phone: '',
         pt_message: ''
       },
-      titulo: 'Titulo',
+      titulo: 'Promoción',
       message: 'texto de mensaje',
       colorAlert: "error",
       texto: 'Algun campo vacio',

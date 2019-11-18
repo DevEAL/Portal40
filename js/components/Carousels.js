@@ -36,10 +36,10 @@ Vue.component("Carousels", {
       }
   },
   mounted() {
-    if (screen.width < 1370) {
-      this.ancho = '560px'
-    } else if (screen.width < 400) {
+    if (screen.width < 400) {
       this.ancho = '200px'
+    } else if (screen.width < 1370) {
+      this.ancho = '560px'
     } else {
       this.ancho = '760px'
     }

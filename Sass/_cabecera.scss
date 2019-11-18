@@ -90,6 +90,9 @@
             width: 30px;
             height: 40px;
         }
+        .pop {
+            margin-top: 40px !important;
+        }
     }
     @media(max-width: 360px){
         .v-application .py-10 {
@@ -98,6 +101,9 @@
         }
         .popup{
             padding: 10px;
+        }
+        .pop {
+            margin-top: 50px !important;
         }
     }
     @media(max-width: 290px){

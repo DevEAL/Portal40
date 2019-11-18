@@ -134,14 +134,20 @@
 
   .logopopup {
     width: 30px;
-    height: 40px; } }
+    height: 40px; }
+
+  .pop {
+    margin-top: 40px !important; } }
 @media (max-width: 360px) {
   .v-application .py-10 {
     padding-top: 15px !important;
     padding-bottom: 15px !important; }
 
   .popup {
-    padding: 10px; } }
+    padding: 10px; }
+
+  .pop {
+    margin-top: 50px !important; } }
 @media (max-width: 290px) {
   .pop {
     margin-top: 50px !important; } }
@@ -423,6 +429,9 @@
     width: 50px;
     height: 50px;
     left: 15%; }
+
+.margenm {
+  padding-left: 2%; }
 
 @media (max-width: 1700px) {
   .lista-Modelo {
@@ -796,26 +805,6 @@
     padding: 2%;
     top: 20%; }
     .bnt-float img {
-      width: 50px;
-      height: 50px; }
-    .bnt-float img:hover {
-      width: 50px;
-      height: 50px; }
-
-  .btn-whatapp {
-    padding: 1%;
-    top: 450px; }
-    .btn-whatapp img {
-      width: 60px;
-      height: 60px; }
-    .btn-whatapp img:hover {
-      width: 60px;
-      height: 60px; } }
-@media (max-width: 360px) {
-  .bnt-float {
-    padding: 2%;
-    top: 20%; }
-    .bnt-float img {
       width: 40px;
       height: 40px; }
     .bnt-float img:hover {
@@ -824,7 +813,7 @@
 
   .btn-whatapp {
     padding: 1%;
-    top: 450px; }
+    top: 530px; }
     .btn-whatapp img {
       width: 50px;
       height: 50px; }
@@ -847,27 +836,67 @@
   .lista-edifico ul .item1::before {
     content: "●";
     display: inline-block;
-    color: #FF911E;
+    color: #F78F1E;
     font-size: 40px; }
   .lista-edifico ul .item2::before {
     content: "●";
     display: inline-block;
-    color: #2FD3C7;
+    color: #31C2DA;
     font-size: 40px; }
   .lista-edifico ul .item3::before {
     content: "●";
     display: inline-block;
-    color: #66388E;
+    color: #003244;
     font-size: 40px; }
   .lista-edifico ul .item4::before {
     content: "●";
     display: inline-block;
-    color: #000;
+    color: #00579B;
     font-size: 40px; }
   .lista-edifico ul .item5::before {
     content: "●";
     display: inline-block;
-    color: #FF7BAA;
+    color: #25BAA2;
+    font-size: 40px; }
+  .lista-edifico ul .item6::before {
+    content: "●";
+    display: inline-block;
+    color: #6B5EA9;
+    font-size: 40px; }
+  .lista-edifico ul .item7::before {
+    content: "●";
+    display: inline-block;
+    color: #FFCB29;
+    font-size: 40px; }
+  .lista-edifico ul .item8::before {
+    content: "●";
+    display: inline-block;
+    color: #F58967;
+    font-size: 40px; }
+  .lista-edifico ul .item9::before {
+    content: "●";
+    display: inline-block;
+    color: #F05223;
+    font-size: 40px; }
+  .lista-edifico ul .item10::before {
+    content: "●";
+    display: inline-block;
+    color: #9B51A0;
+    font-size: 40px; }
+  .lista-edifico ul .item11::before {
+    content: "●";
+    display: inline-block;
+    color: #006A5D;
+    font-size: 40px; }
+  .lista-edifico ul .item12::before {
+    content: "●";
+    display: inline-block;
+    color: #F8BBCF;
+    font-size: 40px; }
+  .lista-edifico ul .item13::before {
+    content: "●";
+    display: inline-block;
+    color: #B0D235;
     font-size: 40px; }
 
 .letra-Texto-E {
@@ -888,13 +917,19 @@
 
   .recorrido {
     width: 1200px;
-    height: 600px; } }
+    height: 600px; }
+
+  .letra-Texto-E {
+    font-size: 20pt; } }
 @media (max-width: 1263px) {
   .letra-Titulo-edifico {
     font-size: 40pt; }
 
   .letra-edificio {
     font-size: 25pt; }
+
+  .letra-Texto-E {
+    font-size: 20pt; }
 
   .recorrido {
     width: 1000px;

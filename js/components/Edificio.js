@@ -41,18 +41,30 @@ Vue.component("Edificio", {
                     <v-row lg="12">
                         <v-col cols="12" xl="6" lg="6" md="12" sm="12" xs="12">
                             <v-row lg="12" align="center" justify="center">
-                                <img src="img/edificio/Asset2.png" class="localizacion"/>
+                                <img src="img/edificio/mapa.png" class="localizacion"/>
                             </v-row>
                         </v-col>
-                        <v-col cols="12" xl="6" lg="6" md="12" sm="12" xs="12" class="texto-opera letra-Texto-E lista-edifico">
-                            <ul class="black--text letra-Texto-E">
-                                <li class="item1">Restaurantes</li>
-                                <li class="item2">Comercio</li>
-                                <li class="item3">Servicios bancarios</li>
-                                <li class="item4">Zonas verdes</li>
-                                <li class="item5">Universidades</li>
-                            </ul>
-                        </v-col>
+                            <v-col align-self="start" cols="12" xl="3" lg="3" md="6" sm="6" xs="6" class="texto-opera letra-Texto-E lista-edifico">
+                                <ul class="black--text letra-Texto-E">
+                                    <li class="item1">Restaurantes</li>
+                                    <li class="item2">Hospitales</li>
+                                    <li class="item3">Drogueria</li>
+                                    <li class="item4">Bancos</li>
+                                    <li class="item5">Puntos de interes</li>
+                                    <li class="item6">Universidades</li>
+                                    <li class="item7">Cajeros</li>
+                                </ul>
+                            </v-col>
+                            <v-col align-self="start" cols="12" xl="3" lg="3" md="6" sm="6" xs="6" class="texto-opera letra-Texto-E lista-edifico">
+                                <ul class="black--text letra-Texto-E">
+                                    <li class="item8">Oficinas</li>
+                                    <li class="item9">Café</li>
+                                    <li class="item10">Bares</li>
+                                    <li class="item11">Policia</li>
+                                    <li class="item12">Iglesia</li>
+                                    <li class="item13">Parques</li>
+                                </ul>
+                            </v-col>
                     </v-row>
                 </v-container>
             </v-col>
