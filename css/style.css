@@ -751,7 +751,7 @@
   z-index: 10;
   position: fixed;
   left: 10px;
-  top: 860px; }
+  top: 88%; }
   .btn-whatapp img {
     width: 80px;
     height: 80px;
@@ -762,14 +762,14 @@
 
 @media (max-width: 1440px) {
   .btn-whatapp {
-    top: 800px; } }
+    top: 88%; } }
 @media (max-width: 1367px) {
   .btn-whatapp {
     left: 5px;
-    top: 650px; } }
+    top: 86%; } }
 @media (max-width: 1290px) {
   .btn-whatapp {
-    top: 690px; } }
+    top: 88%; } }
 @media (max-width: 400px) {
   .carousels-40 {
     padding: 50px 0px !important; }
@@ -813,7 +813,7 @@
 
   .btn-whatapp {
     padding: 1%;
-    top: 530px; }
+    top: 88%; }
     .btn-whatapp img {
       width: 50px;
       height: 50px; }
@@ -822,13 +822,18 @@
       height: 50px; } }
 @media (max-width: 290px) {
   .btn-whatapp {
-    top: 530px; } }
+    top: 88%; } }
+.localizacionE {
+  width: 100%;
+  height: 100%; }
+
 .letra-Titulo-edifico {
   font-size: 35pt;
   font-weight: bold; }
 
 .letra-edificio {
   font-size: 20pt;
+  width: 100%;
   font-weight: bold; }
 
 .lista-edifico ul {
@@ -903,8 +908,9 @@
   font-size: 30pt; }
 
 .img-edificio {
-  width: 500px;
-  height: 300px;
+  width: 100%;
+  height: 250px;
+  padding: 0px 0px;
   margin: auto; }
 
 .recorrido {
@@ -938,15 +944,21 @@
   .recorrido {
     width: 800px;
     height: 500px; } }
-@media (max-width: 800px) {
+@media (max-width: 955px) {
   .letra-Titulo-edifico {
     font-size: 35pt; }
 
   .letra-edificio {
-    font-size: 22pt; }
+    font-size: 22pt;
+    width: 100%; }
 
   .lista-edifico {
-    padding: 25px; } }
+    padding: 25px; }
+
+  .img-edificio {
+    width: 100%;
+    height: 400px;
+    padding: 0px 60px; } }
 @media (max-width: 400px) {
   .letra-Titulo-edifico {
     font-size: 20pt; }
@@ -958,7 +970,12 @@
     padding: 25px; }
 
   .letra-Texto-E {
-    font-size: 24pt; } }
+    font-size: 24pt; }
+
+  .img-edificio {
+    width: 100%;
+    height: 150px;
+    padding: 0px 10px; } }
 .letra-contacto {
   font-size: 35pt;
   font-weight: bold; }

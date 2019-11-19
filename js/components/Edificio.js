@@ -21,16 +21,16 @@ Vue.component("Edificio", {
                             v-for="(item,i) in items"
                             :key="i"
                         >
-                            <v-img :src="item.src" class="img-edificio"/>
+                            <img :src="item.src" class="img-edificio"/>
                             <p class="black--text text-center texto-opera letra-edificio">{{ item.titulo }}</p>
                         </v-col>
                     </v-row>
                 </v-container>
             </v-col>
             <v-col cols="12" class="white color_fondo text-center texto-hat letraTituloE">
-                <div class="btn-apartamento texto-hat">
-                <a @click="estado"><span>RECORRIDO VIRTUAL</span> CONOCE EL EDIFICIO</a>
-                </div>
+                <button @click="estado" class="btn-apartamento texto-hat">
+                    <a><span>RECORRIDO VIRTUAL</span> CONOCE EL EDIFICIO</a>
+                </button>
                 <div>
                     <iframe v-if="recorrido" class="recorrido" frameborder="0" scrolling="auto" marginheight="0"
                     marginwidth="0" src="360/edificio/index.htm"></iframe>
@@ -41,7 +41,7 @@ Vue.component("Edificio", {
                     <v-row lg="12">
                         <v-col cols="12" xl="6" lg="6" md="12" sm="12" xs="12">
                             <v-row lg="12" align="center" justify="center">
-                                <img src="img/edificio/mapa.png" class="localizacion"/>
+                                <img src="img/edificio/mapa.png" class="localizacionE"/>
                             </v-row>
                         </v-col>
                             <v-col align-self="start" cols="12" xl="3" lg="3" md="6" sm="6" xs="6" class="texto-opera letra-Texto-E lista-edifico">

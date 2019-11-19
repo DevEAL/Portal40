@@ -42,7 +42,14 @@ const router = new VueRouter({
       path: '/contacto',
       component: contacto
     }
-  ]
+  ],
+  scrollBehavior (to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition
+    } else {
+      return { x: 0, y: 0 }
+    }
+  }
 })
 // declaro instancia vue
 var app = new Vue({

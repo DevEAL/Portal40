@@ -11,10 +11,10 @@ Vue.component("Apartamento", {
             <v-col cols="12" class="text-center white--text texto-opera fondo-Azul">
                 <v-container>
                     <p class="texto-hat texto-titulo-apartamento">APARTAMENTOS</p>
-                    <p class="texto-apartamento">3 tipo de vivienda que son de 1, 2 0 3 alcobas, desde 32m<sup>2</sup> hasta 63,92m<sup>2</sup> de area contruida.</p>
-                    <p class="texto-apartamento">Apartamentod desde $180'000.000.</p>
+                    <p class="texto-apartamento">3 tipo de vivienda que son de 1, 2 o 3 alcobas, desde 32m<sup>2</sup> hasta 63,92m<sup>2</sup> de área contruida.</p>
+                    <p class="texto-apartamento">Apartamentos desde $180'000.000.</p>
                     <p class="texto-apartamento">El edificio cuenta con zonas comunes para beneficio de sus habitantes.</p>
-                    <p class="texto-apartamento">Diseño arquitectonico moderno con espacios versatiles y dinamicos.</p>
+                    <p class="texto-apartamento">Diseño arquitectónico moderno con espacios versátiles y dinámicos.</p>
                 </v-container>
             </v-col>
             <v-col cols="12" class="white">
@@ -134,13 +134,13 @@ Vue.component("Apartamento", {
             estadoTresHabitaciones: false,
             slides1: [
                 {
+                    src: 'img/apartamento/1-habitacion-3.png',
+                },
+                {
                   src: 'img/apartamento/1-habitacion.png',
                 },
                 {
                     src: 'img/apartamento/1-habitacion-2.png',
-                },
-                {
-                    src: 'img/apartamento/1-habitacion-3.png',
                 },
                 {
                     src: 'img/apartamento/1-habitacion-4.png',

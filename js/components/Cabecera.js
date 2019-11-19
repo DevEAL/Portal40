@@ -5,8 +5,8 @@ Vue.component("Cabecera", {
     <v-app-bar app color="black" dark height="90px" class="head-portal">
         <v-row cols="12">
           <v-col cols="6" xl="2" lg="2" md="2" sm="6" xs="6" >
-            <img src="img/logo_color_h.svg" class="logo-web" height="50px" width="200px"/>
-            <img src="img/isotipo_color_m.svg" class="logo-cel" height="60px" width="80px"/>
+            <a href="/#/"><img src="img/logo_color_h.svg" class="logo-web" height="50px" width="200px"/>
+            <img src="img/isotipo_color_m.svg" class="logo-cel" height="60px" width="80px"/></a>
           </v-col>
           <v-col cols="6" xl="1" lg="" md="3" sm="6" xs="6" class="text-right boton-menu">
             <v-app-bar-nav-icon class="boton-menu" @click="menu = !menu"></v-app-bar-nav-icon>
