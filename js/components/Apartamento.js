@@ -33,7 +33,7 @@ Vue.component("Apartamento", {
                                 <p class="black--text">32,04 m<sup>2</sup> area construida aproximadamente.</p>
                             </v-col>
                         </v-col>
-                        <v-col cols="12" xl="6" lg="6" md="6" sm="12" xs="12" class="slider-apartamento">
+                        <v-col cols="12" xl="6" lg="6" md="6" sm="12" xs="12" class="slider-apartamento2">
                             <vueper-slides class="no-shadow" arrows-outside bullets-outside transition-speed="250" :fixed-height="anchos">
                                 <vueper-slide
                                 v-for="(slide, i) in slides1"
@@ -102,7 +102,7 @@ Vue.component("Apartamento", {
                                 </v-col>
                             </v-row>
                         </v-col>
-                        <v-col cols="12" xl="6" lg="6" md="6" sm="12" xs="12" class="slider-apartamento">
+                        <v-col cols="12" xl="6" lg="6" md="6" sm="12" xs="12" class="slider-apartamento2">
                             <vueper-slides class="no-shadow" arrows-outside bullets-outside transition-speed="250" :fixed-height="anchos">
                                 <vueper-slide
                                 v-for="(slide, i) in slides3"
@@ -177,16 +177,16 @@ Vue.component("Apartamento", {
                     src: 'img/apartamento/3-habitacion-1.png',
                 },
                 {
-                    src: 'img/apartamento/3-habitacion-2.png',
-                },
-                {
                     src: 'img/apartamento/3-habitacion-3.png',
                 },
                 {
-                    src: 'img/apartamento/3-habitacion-4.png',
+                    src: 'img/apartamento/3-habitacion-2.png',
                 },
                 {
                     src: 'img/apartamento/3-habitacion-5.png',
+                },
+                {
+                    src: 'img/apartamento/3-habitacion-4.png',
                 },
                 {
                     src: 'img/apartamento/3-habitacion-6.png',

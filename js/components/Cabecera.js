@@ -18,11 +18,10 @@ Vue.component("Cabecera", {
             centered
             class="responsive "
           >
-            <v-tab class="texto-hat letra-menu" to="/">Inicio</v-tab>
-            <v-tab class="texto-hat letra-menu" to="/Modelo">Modelo de Negocio</v-tab>
-            <v-tab class="texto-hat letra-menu" to="/Apartamento">Apartamento</v-tab>
-            <v-tab class="texto-hat letra-menu" to="/Edificio">Edificio</v-tab>
-            <v-tab class="texto-hat letra-menu" to="/contacto">contacto</v-tab>
+            <v-tab v-for="(item, i) in items"
+              :key="i"
+              :to="item.to"
+              class="texto-hat letra-menu">{{ item.title}}</v-tab>
           </v-tabs>
           </v-col>
         </v-row>
@@ -31,7 +30,7 @@ Vue.component("Cabecera", {
       <a class="bnt-float" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2309.2790123094615!2d-74.06974362843692!3d4.629177668645283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a285c4ec52f%3A0xc07ad86c2beeab7c!2sCra.%2013%20%2340C-20%2C%20Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1572284312526!5m2!1ses-419!2sco" target="_black"><img src="img/iconoubicacion.svg"></a>
     </div>
     <div class="white--text">
-      <a href="https://api.whatsapp.com/send?phone=5732154159969" class="btn-whatapp" target="_blank"><img src="img/whatsapp.svg"></a></a>
+      <a href="https://wa.me/573151459969?text=Me%20gustaría%20tener%20mas%20Información%20del%20proyecto" class="btn-whatapp" target="_blank"><img src="img/whatsapp.svg"></a></a>
     </div>
     <v-navigation-drawer
       v-model="menu"

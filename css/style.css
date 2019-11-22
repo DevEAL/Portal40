@@ -319,7 +319,11 @@
 
 @media (max-width: 1300px) {
   .tamano-h-Inicio {
-    font-size: 40px; } }
+    font-size: 40px; }
+
+  .v-dialog:not(.v-dialog--fullscreen) {
+    max-height: 90%;
+    margin-top: 130px; } }
 @media (max-width: 1180px) {
   .tamano-h-Inicio {
     font-size: 40px; }
@@ -613,6 +617,8 @@
 
 .slider-apartamento {
   margin: auto; }
+  .slider-apartamento svg {
+    color: #04D7D7; }
   .slider-apartamento .vueperslides {
     margin: auto;
     background-size: contain !important; }
@@ -620,6 +626,19 @@
     border: 1px solid #04D7D7 !important;
     background-color: rgba(4, 215, 215, 0.5) !important; }
   .slider-apartamento .ex--center-mode {
+    width: 800px;
+    max-width: 100%;
+    margin: auto; }
+
+.slider-apartamento2 {
+  margin: auto; }
+  .slider-apartamento2 .vueperslides {
+    margin: auto;
+    background-size: contain !important; }
+  .slider-apartamento2 .vueperslides__bullet {
+    border: 1px solid #D9042B !important;
+    background-color: rgba(217, 4, 43, 0.5) !important; }
+  .slider-apartamento2 .ex--center-mode {
     width: 800px;
     max-width: 100%;
     margin: auto; }
@@ -769,7 +788,7 @@
     top: 86%; } }
 @media (max-width: 1290px) {
   .btn-whatapp {
-    top: 88%; } }
+    top: 82%; } }
 @media (max-width: 400px) {
   .carousels-40 {
     padding: 50px 0px !important; }

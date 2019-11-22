@@ -57,7 +57,7 @@ Vue.component("Footer40", {
     data() {
       return {
         socialmedia: {
-          whatsapp: 'https://api.whatsapp.com/send?phone=5732154159969',
+          whatsapp: 'https://wa.me/573151459969?text=Me%20gustaría%20tener%20mas%20Información%20del%20proyecto',
           fecebook: 'https://www.facebook.com/Portal-40-109346230467942/?__tn__=%2Cd%2CP-R&eid=ARCkh5xinRuuTd6Fsbp8bb3zYO01B5IaSoAVhuwrWNZN-LKQcEE265N-hzY-sWe4zp8E3tGExqUFrwd6',
           instagram: 'https://www.instagram.com/portal__40/'
         },

@@ -41,6 +41,10 @@
     .tamano-h-Inicio {
         font-size: 40px;
     }
+    .v-dialog:not(.v-dialog--fullscreen) {
+        max-height: 90%;
+        margin-top: 130px;
+    }
 }
 @media (max-width: 1180px) {
     .tamano-h-Inicio {

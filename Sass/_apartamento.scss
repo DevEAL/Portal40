@@ -25,6 +25,9 @@
 }
 .slider-apartamento {
     margin: auto;
+    svg{
+        color: $color-Azul;
+    }
     .vueperslides{
         margin: auto;
         background-size: contain !important;
@@ -32,6 +35,22 @@
     .vueperslides__bullet {
         border: 1px solid $color-Azul !important;
         background-color: rgba($color: $color-Azul, $alpha: 0.5) !important;
+    }
+    .ex--center-mode {
+        width: 800px;
+        max-width: 100%;
+        margin: auto;
+    }
+}
+.slider-apartamento2 {
+    margin: auto;
+    .vueperslides{
+        margin: auto;
+        background-size: contain !important;
+    }
+    .vueperslides__bullet {
+        border: 1px solid $color-Rojo !important;
+        background-color: rgba($color: $color-Rojo, $alpha: 0.5) !important;
     }
     .ex--center-mode {
         width: 800px;
