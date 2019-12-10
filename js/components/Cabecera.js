@@ -1,6 +1,6 @@
 Vue.component("Cabecera", {
-  template: // html
-  `
+    template: // html
+        `
   <div class="cabecera">
     <v-app-bar app color="black" dark height="90px" class="head-portal">
         <v-row cols="12">
@@ -67,6 +67,7 @@ Vue.component("Cabecera", {
       </v-container>
     </v-navigation-drawer>
     <v-dialog
+      class="margen-top"
       v-model="dialog"
       max-width="800"
     >
@@ -163,72 +164,72 @@ Vue.component("Cabecera", {
     </v-snackbar>
   </div>
   `,
-  data() {
-    return {
-      form: {
-        pt_name: '',
-        pt_email: '',
-        pt_phone: '',
-        pt_message: ''
-      },
-      titulo: 'Promoción',
-      message: 'texto de mensaje',
-      colorAlert: "error",
-      texto: 'Algun campo vacio',
-      color: "#04D7D7",
-      menu: null,
-      dialog: true,
-      overlay: false,
-      snackbar: false,
-      items: [
-        { title: 'Inicio' , to:"/", divider: true, inset: true},
-        { title: 'Modelo de Negocio', to:"/Modelo", divider: true, inset: true },
-        { title: 'Apartamento', to:"/Apartamento", divider: true, inset: true },
-        { title: 'Edificio', to:"/Edificio", divider: true, inset: true},
-        { title: 'contacto', to:"/contacto", divider: true, inset: true}
-      ],
-    }
-  },
-  mounted() {
-    this.validar()
-  },
-  methods: {
-    Enviar() {
-      this.overlay = true
-      if (this.form.pt_name == ''  || this.form.pt_email == '' || this.form.pt_phone == ''){
-        this.snackbar = true
-        this.overlay = false
-      } else {
-        fetch('Api/public/Api/Inscription/Post',{
-          method: 'POST',
-          body: JSON.stringify(this.form),
-          headers:{
-            'Content-Type': 'application/json'
-          }
-        })
-          .then(res => res.json())
-          .then( data => {
-            this.form = {
-              pt_name: '',
-              pt_email: '',
-              pt_phone: '',
-              pt_message: ''
-            }
-            this.dialog = false
-            sessionStorage.Inscripcion = true
-            this.overlay = false
-            this.snackbar = true
-            this.colorAlert = 'success'
-            this.texto = 'Mensaje Enviado'
-          })
-      }
+    data() {
+        return {
+            form: {
+                pt_name: '',
+                pt_email: '',
+                pt_phone: '',
+                pt_message: ''
+            },
+            titulo: 'Promoción',
+            message: 'texto de mensaje',
+            colorAlert: "error",
+            texto: 'Algun campo vacio',
+            color: "#04D7D7",
+            menu: null,
+            dialog: true,
+            overlay: false,
+            snackbar: false,
+            items: [
+                { title: 'Inicio', to: "/", divider: true, inset: true },
+                { title: 'Modelo de Negocio', to: "/Modelo", divider: true, inset: true },
+                { title: 'Apartamento', to: "/Apartamento", divider: true, inset: true },
+                { title: 'Edificio', to: "/Edificio", divider: true, inset: true },
+                { title: 'contacto', to: "/contacto", divider: true, inset: true }
+            ],
+        }
     },
-    validar () {
-      if (sessionStorage.Inscripcion) {
-        this.dialog = false
-      } else {
-        this.dialog = true
-      }
-    }
-  },
+    mounted() {
+        this.validar()
+    },
+    methods: {
+        Enviar() {
+            this.overlay = true
+            if (this.form.pt_name == '' || this.form.pt_email == '' || this.form.pt_phone == '') {
+                this.snackbar = true
+                this.overlay = false
+            } else {
+                fetch('Api/public/Api/Inscription/Post', {
+                        method: 'POST',
+                        body: JSON.stringify(this.form),
+                        headers: {
+                            'Content-Type': 'application/json'
+                        }
+                    })
+                    .then(res => res.json())
+                    .then(data => {
+                        this.form = {
+                            pt_name: '',
+                            pt_email: '',
+                            pt_phone: '',
+                            pt_message: ''
+                        }
+                        this.dialog = false
+                        sessionStorage.Inscripcion = true
+                        this.overlay = false
+                        this.snackbar = true
+                        this.colorAlert = 'success'
+                        this.texto = 'Mensaje Enviado'
+                    })
+            }
+        },
+        validar() {
+            if (sessionStorage.Inscripcion) {
+                this.dialog = false
+            } else {
+                this.dialog = true
+            }
+        }
+    },
 })

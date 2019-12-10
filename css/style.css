@@ -60,6 +60,9 @@
 .popup {
   padding: 40px; }
 
+.v-dialog {
+  margin-top: 13% !important; }
+
 .logop {
   width: 50px;
   height: 50px; }
@@ -79,7 +82,9 @@
 .v-tab:before {
   background-color: transparent !important; }
 
-.theme--dark.v-tabs > .v-tabs-bar .v-tab--disabled, .theme--dark.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active), .theme--dark.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active) > .v-icon {
+.theme--dark.v-tabs > .v-tabs-bar .v-tab--disabled,
+.theme--dark.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active),
+.theme--dark.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active) > .v-icon {
   color: #D9042B !important; }
 
 .v-tabs-bar.theme--dark .v-tab:not(.v-tab--active):not(.v-tab--disabled) {
