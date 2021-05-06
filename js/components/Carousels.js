@@ -5,38 +5,45 @@ Vue.component("Carousels", {
     <v-container
       class="spacing-playground black carousels-40"
       fluid
+      id="carouselBlock"
     >
-      <vueper-slides class="no-shadow" arrows-outside bullets-outside autoplay transition-speed="250" :fixed-height="ancho" >
-        <vueper-slide
-          v-for="(slide, i) in slides"
+      <v-carousel
+        class="carousel__40 carousel__home"
+        height="inherit"
+        cycle
+      >
+        <v-carousel-item
+          v-for="(item,i) in items"
           :key="i"
-          :image="slide.src"
-          ></vueper-slide>
-      </vueper-slides>
+          :src="item.src"
+          reverse-transition="fade-transition"
+          transition="fade-transition"
+        ></v-carousel-item>
+      </v-carousel>
     </v-container>
   </div>
   `,
   data() {
       return {
         ancho: '',
-        slides: [
+        items: [
           {
-            src: 'img/galeria/1.png',
+            src: 'img/galeria/BANNER1_DESKTOP.webp',
           },
           {
-            src: 'img/galeria/2.png',
+            src: 'img/galeria/BANNER2_DESKTOP.webp',
           },
           {
-            src: 'img/galeria/3.png',
+            src: 'img/galeria/BANNER3_DESKTOP.webp',
           },
           {
-            src: 'img/galeria/4.png',
+            src: 'img/galeria/BANNER4_DESKTOP.webp',
           }
         ]
       }
   },
   mounted() {
-    if (screen.width < 400) {
+    /* if (screen.width < 400) {
       this.ancho = '200px'
     } else if (screen.width < 1300) {
       this.ancho = '410px'
@@ -44,6 +51,8 @@ Vue.component("Carousels", {
       this.ancho = '560px'
     } else {
       this.ancho = '760px'
-    }
+    } */
   },
 })
+
+/* cycle */

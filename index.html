@@ -6,12 +6,12 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Portal 40</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Red+Hat+Display&display=swap" rel="stylesheet">
-	<link href="css/vueperslides.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Red+Hat+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
 </head>
@@ -33,6 +33,8 @@
 		<div>
 			<Carousels></Carousels>
 			<Inicio></Inicio>
+			<Inicio2></Inicio2>
+			<Conoce></Conoce>
 			<Formulario></Formulario>
 			<Footer40></Footer40>
 		</div>
@@ -40,16 +42,15 @@
 	<template id="modelo">
 		<div>
 			<Carousels></Carousels>
+			<div class="white py-5"><Inicio2></Inicio2></div>
 			<Modelo></Modelo>
-			<Formulario></Formulario>
 			<Footer40></Footer40>
 		</div>
 	</template>
-	<template id="apartamento">
+	<template id="inmuebles">
 		<div>
 			<Carousels></Carousels>
-			<Apartamento></Apartamento>
-			<Formulario></Formulario>
+			<Inmuebles></Inmuebles>
 			<Footer40></Footer40>
 		</div>
 	</template>
@@ -58,39 +59,27 @@
 			<div>
 				<Carousels></Carousels>
 				<Edificio></Edificio>
-				<Formulario></Formulario>
 				<Footer40></Footer40>
 			</div>
 		</template>
 
 	<template id="contacto">
 		<div>
-			<v-row>
-				<v-col cols="12" class="fondo-Rojo text-center white--text texto-hat letra-contacto">
-					<v-container>
-						<p>COMPRA PORTAL 40 Y COMPRA 5 NEGOCIOS EN 1</p>
-					</v-container>
-				</v-col>
-				<v-col cols="12" class="white text-center white--text">
-					<Contacto></Contacto>
-				</v-col>
-				<v-col cols="12" class="formulario">
-					<Formulario></Formulario>
-				</v-col>
-				<v-col cols="12">
-					<Footer40></Footer40>
-				</v-col>
-			</v-row>
+			<Contacto></Contacto>
+			<Formulario></Formulario>
+			<Footer40></Footer40>
 		</div>
 	</template>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
 	<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
-	<script src="https://unpkg.com/vueperslides"></script>
+	<script src="js/components/Comming.js"></script>
 	<script src="js/components/Inicio.js"></script>
+	<script src="js/components/InicioVideo.js"></script>
+	<script src="js/components/Conoce.js"></script>
 	<script src="js/components/Modelo.js"></script>
 	<script src="js/components/Cabecera.js"></script>
-	<script src="js/components/Apartamento.js"></script>
+	<script src="js/components/Inmuebles.js"></script>
 	<script src="js/components/Edificio.js"></script>
 	<script src="js/components/Contacto.js"></script>
 	<script src="js/components/Carousels.js"></script>

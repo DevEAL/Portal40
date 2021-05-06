@@ -1,9 +1,17 @@
 .footer {
-    .v-tabs-slider {
-        background-color: #000 !important;
+    background-color: $bg-footer;
+    h3 {
+        color: $color-Azul;
+        font-family: $hat;
+        margin-bottom: 1.5vw;
+        font-size: 1.5rem;
     }
     .logoF{
         margin-bottom: 20px;
+        img {
+            width: 20%;
+            @include mq(min,md) { width: 7%; }
+        }
     }
     .container{
         padding: 20px 350px;
@@ -21,10 +29,11 @@
         font-size: 30px;
         display: inline-block;
         i{
-            color: $color-Black;
+            color: $color-White;
             cursor: pointer;
         }
-      }
+    }
+    .theme--light.v-tabs > .v-tabs-bar .v-tab--disabled, .theme--light.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active), .theme--light.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active) > .v-btn, .theme--light.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active) > .v-icon { color: $color-Rojo; }
     @media (max-width: 1800px) {
         .container{
             padding: 20px 100px;

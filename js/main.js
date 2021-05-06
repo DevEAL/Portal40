@@ -7,8 +7,8 @@ const Modelo = {
   template: '#modelo'
 }
 
-const Apartamento = {
-  template: '#apartamento',
+const Inmuebles = {
+  template: '#inmuebles',
 }
 
 const Edificio = {
@@ -21,6 +21,7 @@ const contacto = {
 
 // abrir rutas a utilizar
 const router = new VueRouter({
+  // mode: 'history',
   routes: [
     {
       path: '/',
@@ -31,8 +32,8 @@ const router = new VueRouter({
       component: Modelo
     },
     {
-      path: '/Apartamento',
-      component: Apartamento
+      path: '/Inmuebles',
+      component: Inmuebles
     },
     {
       path: '/Edificio',

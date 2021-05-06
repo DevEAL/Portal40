@@ -1,24 +1,79 @@
+// Fuentes
+@font-face {
+    font-family: 'Nord Bold';
+    src: url('/fonts/Nord-Bold.ttf');
+}
+
+// Variables
 $color-Azul:#04D7D7;
 $color-Azul-dark:rgb(5, 197, 197);
 $color-Rojo: #D9042B;
 $color-Black: #000;
 $color-White: #fff;
-$punto-1: #F78F1E;
-$punto-2: #31C2DA;
-$punto-3: #003244;
-$punto-4: #00579B;
-$punto-5: #25BAA2;
-$punto-6: #6B5EA9;
-$punto-7: #FFCB29;
-$punto-8: #F58967;
-$punto-9: #F05223;
-$punto-10: #9B51A0;
-$punto-11: #006A5D;
-$punto-12: #F8BBCF;
-$punto-13: #B0D235;
+$color-gray-dark: #3c3c3b;
+$color-gray-dark2: #333333;
+$bg-footer: #f6f6f6;
+$orange: #F78F1E;
+$light-blue: #31C2DA;
+$dark-blue: #003244;
+$blue: #00579B;
+$forest: #B0D235;
+$green: #25BAA2;
+$dark-green: #006A5D;
+$purple: #9B51A0;
+$dark-purple: #6B5EA9;
+$yellow: #FFCB29;
+$salmon: #F58967;
+$red: #F05223;
+$pink: #F8BBCF;
 
-$hat:'Red Hat Display', sans-serif;
+
+$hat: 'Red Hat Display', sans-serif;
 $open: 'Open Sans', sans-serif;
+$nord: 'Nord Bold', sans-serif;
+
+// Mapa variables para responsive
+$breakpoints: (
+    xs: 480px,
+    sm: 600px,
+    md: 800px,
+    mg: 1024px,
+    lg: 1360px,
+    xl: 1920px,
+);
+
+// Responsive
+@mixin mq($rel:null, $bp:true, $bp1:null){
+    @if map-has-key($breakpoints, $bp) and $rel == 'min' {
+        @media (min-width: map-get($breakpoints, $bp)) { @content; }
+    } @else if map-has-key($breakpoints, $bp) and $rel == 'max' {
+        @media (max-width: map-get($breakpoints, $bp)) { @content; }
+    } @else if type-of($bp) == number and unit($bp) == 'px' and $rel == 'min' {
+        @media (min-width: $bp) { @content; }
+    } @else if type-of($bp) == number and unit($bp) == 'px' and $rel == 'max' {
+        @media (max-width: $bp) { @content; }
+    } @else if $rel == null{
+        @media (max-width: $bp) and (min-width: $bp1)  { @content; }
+    } 
+}
+/* Cómo Usarlo
+@media (min-width()){} --> @include mq(min, ) {}
+@media (max-width()){} --> @include mq(max, ) {}
+@media (max-width()) and (min-width()){} --> @include mq(null,n1,n2) {}
+*/
+
+// Conveniciones mapa
+@mixin conventions($color){
+    &::before {
+        content: "\f111";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        color: $color;
+        display: inline-block;
+        font-size: 2rem;
+        padding-right: 20px;
+    }
+}
 
 @import 'general.scss';
 @import 'cabecera.scss';
@@ -26,7 +81,7 @@ $open: 'Open Sans', sans-serif;
 @import 'formulario.scss';
 @import 'Inicio.scss';
 @import 'modelo.scss';
-@import 'apartamento.scss';
+@import 'inmuebles.scss';
 @import 'carousels.scss';
 @import 'edificio.scss';
 @import 'contacto.scss';

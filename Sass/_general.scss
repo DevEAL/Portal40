@@ -1,3 +1,5 @@
+p { color: $color-gray-dark; }
+.letter--spacing {letter-spacing: 2px; }
 .texto-hat {
   font-family: $hat;
 }
@@ -10,6 +12,12 @@
 .color-texto-azul {
   color: $color-Azul;
 }
+.graydark-text { color: $color-gray-dark !important }
+.hover-url:hover { opacity: 0.6; }
+.btn__site {
+  border-radius: 15px;
+  padding: 0 40px !important;
+}
 .fondo-Azul {
   background: $color-Azul;
 }
@@ -17,7 +25,7 @@
   background: $color-Rojo;
 }
 #app{
-  background: #000;
+  background: $color-White;
 }
 .theme--dark.v-btn.v-btn--icon{
   color: $color-Rojo;
@@ -41,6 +49,35 @@
   transform: translateY(800px);
   opacity: 0;
 }
+.btn-route360 {
+  text-decoration: none;
+  background: $color-Azul;
+  margin: 9px 90px;
+  padding: 20px 40px;
+  font-size: 1.5rem;
+  text-align: center;
+  box-shadow: 10px 10px 10px 0 #ccc;
+  color: #fff !important;
+  h5 {
+    font-weight: 400;
+    &::after{
+      content: ">>";
+      color: $color-Rojo;
+      font-weight: 900;
+      position: absolute;
+      padding-left: 1vw;
+    }
+    span{
+        font-weight: 900;
+    }
+  }
+  @include mq(min,mg) {
+    font-size: 2.5rem;
+    padding: 20px 100px;
+  }
+  /* @include mq(max,mg) { display: none; } */
+}
+
 @media (max-width: 564px) {
   .divisor {
     padding: 0;

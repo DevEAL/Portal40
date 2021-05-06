@@ -13,87 +13,27 @@
 }
 .lista-edifico ul{
     list-style: none;
-    .item1::before{
-        content: "●";
-        display: inline-block;
-        color: $punto-1;
-        font-size: 40px;
+    li {
+        text-transform: uppercase;
+        font-size: 1rem;
+        @include mq(min,1920px) {font-size: 1.5rem;}
+        span {
+            &.p_orange {@include conventions($orange)}
+            &.p_light-blue {@include conventions($light-blue)}
+            &.p_dark-blue {@include conventions($dark-blue)}
+            &.p_blue {@include conventions($blue)}
+            &.p_forest {@include conventions($forest)}
+            &.p_green {@include conventions($green)}
+            &.p_dark-green {@include conventions($dark-green)}
+            &.p_purple {@include conventions($purple)}
+            &.p_dark-purple {@include conventions($dark-purple)}
+            &.p_yellow {@include conventions($yellow)}
+            &.p_salmon {@include conventions($salmon)}
+            &.p_red {@include conventions($red)}
+            &.p_pink {@include conventions($pink)}
+        }
     }
-    .item2::before{
-        content: "●";
-        display: inline-block;
-        color: $punto-2;
-        font-size: 40px;
-    }
-    .item3::before{
-        content: "●";
-        display: inline-block;
-        color: $punto-3;
-        font-size: 40px;
-    }
-    .item4::before{
-        content: "●";
-        display: inline-block;
-        color: $punto-4;
-        font-size: 40px;
-    }
-    .item5::before{
-        content: "●";
-        display: inline-block;
-        color: $punto-5;
-        font-size: 40px;
-    }
-    .item6::before{
-        content: "●";
-        display: inline-block;
-        color: $punto-6;
-        font-size: 40px;
-    }
-    .item7::before{
-        content: "●";
-        display: inline-block;
-        color: $punto-7;
-        font-size: 40px;
-    }
-    .item8::before{
-        content: "●";
-        display: inline-block;
-        color: $punto-8;
-        font-size: 40px;
-    }
-    .item9::before{
-        content: "●";
-        display: inline-block;
-        color: $punto-9;
-        font-size: 40px;
-    }
-    .item10::before{
-        content: "●";
-        display: inline-block;
-        color: $punto-10;
-        font-size: 40px;
-    }
-    .item11::before{
-        content: "●";
-        display: inline-block;
-        color: $punto-11;
-        font-size: 40px;
-    }
-    .item12::before{
-        content: "●";
-        display: inline-block;
-        color: $punto-12;
-        font-size: 40px;
-    }
-    .item13::before{
-        content: "●";
-        display: inline-block;
-        color: $punto-13;
-        font-size: 40px;
-    }
-}
-.letra-Texto-E {
-    font-size: 30pt;
+    @include mq(max,1263px) { columns: 2; margin-top: 5vw; }
 }
 .img-edificio {
     width: 100%;
@@ -104,74 +44,4 @@
 .recorrido {
     width: 1740px;
     height: 700px;
-}
-@media(max-width: 1650px){
-    .letra-Titulo-edifico {
-        font-size: 40pt;
-    }
-    .recorrido {
-        width: 1200px;
-        height: 600px;
-    }
-    .letra-Texto-E {
-        font-size: 20pt;
-    }
-}
-@media(max-width: 1263px){
-    .letra-Titulo-edifico {
-        font-size: 40pt;
-    }
-    .letra-edificio {
-        font-size: 25pt;
-    }
-    .letra-Texto-E {
-        font-size: 20pt;
-    }
-    .recorrido {
-        width: 1000px;
-        height: 600px;
-    }
-}
-@media(max-width: 1650px){
-    .recorrido {
-        width: 800px;
-        height: 500px;
-    }
-}
-@media(max-width: 955px){
-    .letra-Titulo-edifico {
-        font-size: 35pt;
-    }
-    .letra-edificio {
-        font-size: 22pt;
-        width: 100%;
-    }
-    .lista-edifico{
-        padding: 25px;
-    }
-    .img-edificio {
-        width: 100%;
-        height: 400px;
-        padding: 0px 60px;
-    }
-}
-
-@media(max-width: 400px){
-    .letra-Titulo-edifico {
-        font-size: 20pt;
-    }
-    .letra-edificio {
-        font-size: 18pt;
-    }
-    .lista-edifico{
-        padding: 25px;
-    }
-    .letra-Texto-E {
-        font-size: 24pt;
-    }
-    .img-edificio {
-        width: 100%;
-        height: 150px;
-        padding: 0px 10px;
-    }
 }

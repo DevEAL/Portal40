@@ -1,0 +1,32 @@
+{
+  "name": "webportal40",
+  "version": "1.0.0",
+  "description": "Paquetes NPM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevEAL/Portal40.git"
+  },
+  "author": "Jon Tmarz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DevEAL/Portal40/issues"
+  },
+  "homepage": "https://github.com/DevEAL/Portal40#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemap": "^1.0.1",
+    "gulp-sourcemaps": "^3.0.0"
+  },
+  "dependencies": {
+    "vue-carousel": "^0.18.0"
+  }
+}

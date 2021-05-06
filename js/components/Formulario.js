@@ -1,25 +1,25 @@
 Vue.component("Formulario", {
     template: // html
     `
-    <div class="form">
+    <div class="form" id="formulario">
         <v-row >
-            <v-col cols="12" xl="6" lg="6" md="6" sm="12" xs="6" class="fondo-Azul margen" align="center" justify="center">
+            <v-col cols="12" lg="6" class="fondo-Azul margen" align="center" justify="center">
                 <img class="margenDerecha" src="img/formulario/margenDerecha.svg">
-                <v-col cols="12" xl="10" lg="10" md="10" sm="10" xs="10" class="fondo-Azul margen_content" >
-                    <p class="text-center title-form texto-opera  white--text">¿Interesado en <br/>invertir y/o vivir?</p>
-                    <p class="text-center texto-opera white--text texto-form">
+                <v-col cols="12" lg="10" class="fondo-Azul margen_content" >
+                    <h2 class="text-center title-form texto-opera  white--text">¿Interesado en <br/>invertir y/o vivir?</h2>
+                    <h4 class="text-center texto-opera white--text texto-form">
                         Puedes visitarnos o escribenos y nosotros te<br/> contactamos para mayor información.
-                    </p>
-                    <v-row align="center" justify="center">
-                        <img src="img/formulario/logo.svg" class="img-Form" />
+                    </h4>
+                    <v-row align="center" justify="center" class="mt-10">
+                        <img src="img/formulario/logo.svg" class="img-form" />
                     </v-row>
                 </v-col>
                 <img class="margenIzquierda" src="img/formulario/margenIzquierda.svg">
             </v-col>
-            <v-col class="blue-grey lighten-3" cols="12" xl="6" lg="6" md="6" sm="12" xs="6">
+            <v-col class="bg-form my-15" cols="12" lg="6" >
                 <v-container>
                     <v-form>
-                        <v-col cols="12" sm="8" md="8">
+                        <v-col class="size_input">
                             <v-text-field
                                 :color="color"
                                 label="Nombre"
@@ -30,7 +30,7 @@ Vue.component("Formulario", {
                                 required
                             ></v-text-field>
                         </v-col>
-                        <v-col cols="12" sm="8" md="8">
+                        <v-col class="size_input">
                             <v-text-field
                                 :color="color"
                                 label="Correo Electrónico"
@@ -42,7 +42,7 @@ Vue.component("Formulario", {
                                 required
                             ></v-text-field>
                         </v-col>
-                        <v-col cols="12" sm="8" md="8">
+                        <v-col class="size_input">
                             <v-text-field
                                 :color="color"
                                 label="Celular"
@@ -53,7 +53,7 @@ Vue.component("Formulario", {
                                 required
                             ></v-text-field>
                         </v-col>
-                        <v-col cols="12" sm="8" md="8">
+                        <v-col class="size_input">
                             <v-textarea
                                 :color="color"
                                 label="Mensaje"
@@ -63,8 +63,19 @@ Vue.component("Formulario", {
                                 required
                             ></v-textarea>
                         </v-col>
-                        <v-col cols="12" sm="8" md="8">
-                            <v-btn class="ma-2 cyan btn" tile color="indigo" dark @click="Enviar">Enviar</v-btn>
+                        <v-col class="d-flex align-start size_input">
+                            <v-checkbox
+                                :color="color"
+                                class="color-icon my-0"
+                                name="Mensaje"
+                                v-model="form.pt_terms"
+                                required
+                            ></v-checkbox>
+                            <p class="txt__check white--text">Al oprimir “Enviar” acepta la política de datos personales.<br><a href="http://www.estrategiascomerciales.co/habeas-data/" target="_blank" class="white--text txt__check hover-url"> 
+                            Política Manejo de Datos Personal / Habeas Data</a></p>
+                        </v-col>
+                        <v-col class="size_input">
+                            <v-btn class="ma-2 cyan btn btn__site" tile color="indigo" dark @click="Enviar">Enviar</v-btn>
                         </v-col>
                     </v-form>
                 </v-container>
@@ -94,7 +105,8 @@ Vue.component("Formulario", {
                 pt_name: '',
                 pt_email: '',
                 pt_phone: '',
-                pt_message: ''
+                pt_message: '',
+                pt_terms: ''
             }
         }
     },

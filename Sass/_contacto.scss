@@ -1,95 +1,35 @@
-.letra-contacto {
-    font-size: 35pt;
+.title-contact {
+    font-size: 1.5rem;
     font-weight: bold;
+    @include mq(null,1600px,1024px) {font-size: 2.5rem;}
+    @include mq(min,1600px) {font-size: 3rem;}
 }
-.texto-contacto {
-    font-size: 20pt;
-}
-.texto-titulo-contacto {
-    font-size: 30pt;
+.title-loc-contact {
+    font-size: 2rem;
     font-weight: bold;
+    @include mq(min,1600px) { font-size: 3.5rem; }
 }
-.mapa{
-    width: 600px;
-    height: 550px;
+.text-loc-contact {
+    font-size: 1.2rem;
+    @include mq(min,1600px) { font-size: 1.5rem; }
 }
-.localizacion{
-    width: 600px;
-    height: 550px;
+.img-parking {
+    width: 70%;
+    @include mq(min,1024px) { width: 30%; }
 }
-@media(max-width: 1700px){
-    .letra-contacto {
-        font-size: 35pt;
-    }
-    .texto-contacto {
-        font-size: 16pt;
-    }
-    .texto-titulo-contacto {
-        font-size: 20pt;
-    }
-    .mapa{
-        width: 500px;
-        height: 400px;
-    }
-    .localizacion{
-        width: 500px;
-        height: 400px;
-    }
+.title-time {
+    font-size: 2.3rem;
+    @include mq(min,1024px) { font-size: 1.8rem; }
 }
-@media(max-width: 1263px){
-    .letra-contacto {
-        font-size: 35pt;
-    }
-    .texto-contacto {
-        font-size: 16pt;
-    }
-    .texto-titulo-contacto {
-        font-size: 20pt;
-    }
-    .mapa{
-        width: 800px;
-        height: 500px;
-    }
-    .localizacion{
-        width: 800px;
-        height: 500px;
-    }
+.map{
+    width: 60%;
+    height: 25vh;
+    @include mq(min,1024px) { height: 50vh; }
 }
-@media(max-width: 800px){
-    .letra-contacto {
-        font-size: 35pt;
-    }
-    .texto-contacto {
-        font-size: 16pt;
-    }
-    .texto-titulo-contacto {
-        font-size: 20pt;
-    }
-    .mapa{
-        width: 700px;
-        height: 500px;
-    }
-    .localizacion{
-        width: 700px;
-        height: 500px;
-    }
-}
-@media(max-width: 400px){
-    .letra-contacto {
-        font-size: 26pt;
-    }
-    .texto-contacto {
-        font-size: 16pt;
-    }
-    .texto-titulo-contacto {
-        font-size: 20pt;
-    }
-    .mapa{
-        width: 300px;
-        height: 300px;
-    }
-    .localizacion{
-        width: 300px;
-        height: 300px;
+.btn-waze {
+    img {
+        width: 15%;
+        @include mq(min,1024px) { width: 8%; }
+        &:hover { filter: opacity(0.6) drop-shadow(2px 2px 6px #3c3c3b) }
     }
 }

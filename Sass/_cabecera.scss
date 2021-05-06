@@ -44,6 +44,41 @@
 .v-tabs-bar.theme--dark .v-tab:not(.v-tab--active):not(.v-tab--disabled) {
     opacity: 1 !important;
 }
+.bnt-float {
+    background: $color-Azul;
+    padding: 1%;
+    z-index: 10;
+    position: fixed;
+    right: 0px;
+    top: 15%;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    img{
+        width: 30px;
+        height: 30px;    
+        transition: .5s;
+        &:hover {
+            width: 35px;
+            height: 35px;
+        }
+        @include mq(min,lg) {
+            width: 50px;
+            height: 50px;
+            &:hover {
+                width: 70px;
+                height: 70px;
+            }
+        }
+    }
+}
+[role=menu].v-menu__content {
+    margin-top: 4vh;
+    margin-left: 2vh;
+    @include mq(min,lg) { margin-top: 5vh; }
+    .v-list { background-color: $color-Azul; }
+    .v-list-item__title { padding-bottom: 10px; }
+    .v-list-item:nth-child(1) { padding-top: 10px;  }
+}
 
 @media (max-width: 1500px) {
     .letra-menu {

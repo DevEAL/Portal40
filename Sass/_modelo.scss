@@ -1,32 +1,51 @@
-.titulo-Modelo {
-    font-size: 35pt;
+.title-Model {
+    font-size: 1.5rem;
     font-weight: bold;
+    text-transform: uppercase;
     margin: 4%;
+    @include mq(min,900px) { font-size: 2.5rem;}
+    @include mq(min,1300px) { font-size: 3rem;}
 }
-.letra-Titulo-Iconos {
-    font-size: 25pt;
+.title-content {
+    font-size: 2rem;
     font-weight: bold;
+    text-transform: uppercase;
 }
-.letra-Texto-Iconos {
-    font-size: 23pt;
-    font-weight: bold;
+.text-content {
+    font-size: 1rem;
+    margin: 0 15%;
+    @include mq(min,800px) { font-size: 1.2rem; }
+    @include mq(min,1440px) { margin: 0 25%; }
+}
+.size__img {
+    width:90px;
+    height:90px;
 }
 .letra-Texto-resena {
-    font-size: 18pt;
+    font-size: 0.8rem;
     font-weight: bold;
+    @include mq(min,800px) { font-size: 1rem; }
 }
 .seccion-tres-Modelo {
     padding: 16px;
     font-size: 55pt;
     font-weight: bold;
 }
-.letra-Titulo-2 {
-    font-size: 40pt;
+.title-benefit {
+    font-size: 3rem;
     font-weight: bold;
+    @include mq(min,1440px) { font-size: 5rem; }
 }
-.letra-Titulo-3 {
-    font-size: 26pt;
+.subtitle-benefic {
+    font-size: 1.5rem;
     font-weight: bold;
+    @include mq(min,1440px) { font-size: 2.5rem; }
+}
+.text-s-benefit {
+    margin-left: 3vh;
+    margin-top: 6vh;
+    @include mq(null,1920px,1024px) { margin-left: 10vh; }
+    @include mq(min,xl) { margin-left: 31vh; }
 }
 .lista-Modelo {
     list-style: none;
@@ -68,33 +87,9 @@
     }
 }
 @media (max-width: 1520px) {
-    .titulo-Modelo {
-        font-size: 40pt;
-        font-weight: bold;
-    }
-    .letra-Titulo-Iconos {
-        font-size: 22pt;
-        font-weight: bold;
-    }
-    .letra-Texto-Iconos {
-        font-size: 20pt;
-        font-weight: bold;
-    }
-    .letra-Texto-resena {
-        font-size: 14pt;
-        font-weight: bold;
-    }
     .seccion-tres-Modelo {
         padding: 16px;
         font-size: 45pt;
-        font-weight: bold;
-    }
-    .letra-Titulo-2 {
-        font-size: 40pt;
-        font-weight: bold;
-    }
-    .letra-Titulo-3 {
-        font-size: 18pt;
         font-weight: bold;
     }
     .lista-Modelo {
@@ -118,33 +113,9 @@
     }
 }
 @media (max-width: 1256px) {
-    .titulo-Modelo {
-        font-size: 37pt;
-        font-weight: bold;
-    }
-    .letra-Titulo-Iconos {
-        font-size: 20pt;
-        font-weight: bold;
-    }
-    .letra-Texto-Iconos {
-        font-size: 16pt;
-        font-weight: bold;
-    }
-    .letra-Texto-resena {
-        font-size: 13pt;
-        font-weight: bold;
-    }
     .seccion-tres-Modelo {
         padding: 16px;
         font-size: 30pt;
-        font-weight: bold;
-    }
-    .letra-Titulo-2 {
-        font-size: 34pt;
-        font-weight: bold;
-    }
-    .letra-Titulo-3 {
-        font-size: 18pt;
         font-weight: bold;
     }
     .lista-Modelo {
@@ -184,21 +155,9 @@
     }
 }
 @media (max-width: 800px) {
-    .titulo-Modelo {
-        font-size: 25pt;
-        font-weight: bold;
-    }
     .seccion-tres-Modelo {
         padding: 16px;
         font-size: 20pt;
-        font-weight: bold;
-    }
-    .letra-Titulo-2 {
-        font-size: 30pt;
-        font-weight: bold;
-    }
-    .letra-Titulo-3 {
-        font-size: 18pt;
         font-weight: bold;
     }
     .lista-Modelo {

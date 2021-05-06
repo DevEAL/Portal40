@@ -1,11 +1,34 @@
-.carousels-40 {
-    padding: 60px 100px !important;
-
-    .vueperslides__bullet {
-        border: 1px solid $color-Rojo !important;
-        background-color: rgba($color: $color-Rojo, $alpha: 0.5) !important;
+#carouselBlock {
+    .carousel__40  {
+        @include mq(max,md) {
+            .v-carousel__controls {
+                height: 25px;
+                .v-btn__content i { font-size: 9px !important; }
+            }
+        }
+        .v-window__next, .v-window__prev {
+            background-color: transparent;
+            i {
+                color: $color-Azul;
+                font-size: 4rem !important;
+            }
+        }
+    }
+    .carousel__home {
+        .v-image__image {
+            background-size: 75%;
+            @include mq(min,mg) { background-size: 90%; }
+        }
+    }
+    .carousel__state {
+        .v-image__image {
+            background-size: 60%;
+            @include mq(min,mg) { background-size: 50%; }
+        }
     }
 }
+
+
 .ex--center-mode {
     width: 100%;
     max-width: 100%;
@@ -14,127 +37,8 @@
 .theme--light.v-application {
     color: $color-Rojo;
 }
-.vueperslides__arrows--outside .vueperslides__arrow--next {
-    right: -70px;
-}
-.vueperslides__arrows--outside .vueperslides__arrow--prev {
-    left: -70px;
-}
-.bnt-float{
-    background: $color-Azul;
-    padding: 1%;
-    z-index: 10;
-    position: fixed;
-    right: 0px;
-    top: 15%;
-    border-top-left-radius: 50%;
-    border-bottom-left-radius: 50%;
-    img{
-        width: 50px;
-        height: 50px;
-        transition: .5s;
-    }
-    img:hover{
-        width: 100px;
-        height: 80px;
-    }
-}
-.btn-whatapp{
-    padding: 1%;
-    z-index: 10;
-    position: fixed;
-    left: 10px;
-    top: 88%;
-    img{
-        width: 80px;
-        height: 80px;
-        transition: .5s;
-    }
-    img:hover{
-        width: 90px;
-        height: 90px;
-    }
-}
-@media (max-width: 1440px) {
-    .btn-whatapp{
-        top: 88%;
-    }
-}
-@media(max-width: 1367px){
-    .btn-whatapp{
-        left: 5px;
-        top: 86%;
-    }
-}
-@media (max-width: 1290px) {
-    .btn-whatapp{
-        top: 82%;
-    }
-}
 @media(max-width: 400px){
     .carousels-40 {
         padding: 50px 0px !important;
-    }
-    .vueperslides__arrows--outside .vueperslides__arrow--next {
-        right: -1%;
-    }
-    .vueperslides__arrows--outside .vueperslides__arrow--prev {
-        left: -1%;
-    }
-    .vueperslides__bullets--outside{
-        display: none;
-    }
-    .bnt-float{
-        padding: 2%;
-        img{
-            width: 50px;
-            height: 50px;
-        }
-        img:hover{
-            width: 50px;
-            height: 50px;
-        }
-    }
-    .btn-whatapp{
-        padding: 1%;
-        img{
-            width: 60px;
-            height: 60px;
-        }
-        img:hover{
-            width: 60px;
-            height: 60px;
-        }
-    }
-}
-@media(max-width: 360px){
-    .bnt-float{
-        padding: 2%;
-        top: 20%;
-        img{
-            width: 40px;
-            height: 40px;
-        }
-        img:hover{
-            width: 40px;
-            height: 40px;
-        }
-    }
-    .btn-whatapp{
-        padding: 1%;
-        top: 88%;
-        img{
-            width: 50px;
-            height: 50px;
-        }
-        img:hover{
-            width: 50px;
-            height: 50px;
-        }
-    }
-}
-@media(max-width: 290px){
-    .btn-whatapp {
-        top: 88%;
     }
 }
