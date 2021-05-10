@@ -47,6 +47,10 @@
     @include mq(null,1920px,1024px) { margin-left: 10vh; }
     @include mq(min,xl) { margin-left: 31vh; }
 }
+.size_txt_marketSpace {
+    width: 70%;
+    margin: auto;
+}
 .lista-Modelo {
     list-style: none;
     font-size: 20pt;

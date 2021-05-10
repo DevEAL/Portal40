@@ -7,7 +7,7 @@ Vue.component("Footer40", {
                     <v-col cols="12" md="4" class="text-center text-md-left texto-opera paddingFooter">
                         <h3>POLÍTICAS Y PRIVACIDAD</h3>
                         <a href="/" class="text-decoration-none graydark-text hover-url">Política Manejo de Datos Personales</a>
-                        <p class="mt-5">Todos los derechos reservado &#174;</p>
+                        <p class="mt-5">Todos los derechos reservados &#174;</p>
                     </v-col>
                     <v-col cols="12" md="4" class="text-center text-md-left texto-opera paddingFooter">
                         <h3>CONTÁCTANOS</h3>
@@ -46,7 +46,6 @@ Vue.component("Footer40", {
                         >
                             <v-tab class="texto-hat letra-menu texto-hat" v-for="(item, i) in menu" :key="i" :to="item.url">{{item.ruta}}</v-tab>
                         </v-tabs>
-                        <v-divider color="#D9042B"></v-divider>
                     </v-col>
                 </v-row>
                 <v-row align="center" justify="center" class="logoF flex-column mt-10">

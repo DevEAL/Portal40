@@ -10,7 +10,8 @@
             background-color: transparent;
             i {
                 color: $color-Azul;
-                font-size: 4rem !important;
+                font-size: 3rem !important;
+                @include mq(min,md) { font-size: 4rem !important; }
             }
         }
     }

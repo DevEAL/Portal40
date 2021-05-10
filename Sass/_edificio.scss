@@ -2,9 +2,10 @@
     width: 100%;
     height: 100%;
 }
-.letra-Titulo-edifico {
-    font-size: 35pt;
+.title-building {
+    font-size: 1.5rem;
     font-weight: bold;
+    @include mq(min,mg) { font-size: 3.2rem; }
 }
 .letra-edificio {
     font-size: 20pt;
@@ -40,8 +41,4 @@
     height: 250px;
     padding: 0px 0px;
     margin: auto;
-}
-.recorrido {
-    width: 1740px;
-    height: 700px;
 }

@@ -3,9 +3,9 @@ Vue.component("Edificio", {
     `
     <div>
         <v-row>
-            <v-col cols="12" class="fondo-Azul text-center texto-hat letra-Titulo-edifico">
-                <v-container>
-                    <p class="white--text">ADEM&#193;S NUESTRO EDIFICIO CUENTA CON...</p>
+            <v-col cols="12" class="text-center texto-hat white">
+                <v-container fluid class="fondo-Azul mb-5">
+                    <h1 class="white--text text-uppercase title-building px-15">Conoce nuestras zonas comunes</h1>
                 </v-container>
             </v-col>
             <v-col cols="12" class="white">
@@ -28,7 +28,7 @@ Vue.component("Edificio", {
                 <button @click="estado" class="btn-route360 texto-hat">
                     <h5 class="white--text"><span>RECORRIDO VIRTUAL</span> </br>CONOCE EL EDIFICIO</h5>
                 </button>
-                <div>
+                <div id="map-building" class="mt-5">
                     <iframe v-if="recorrido" class="recorrido" frameborder="0" scrolling="auto" marginheight="0"
                     marginwidth="0" src="360/edificio/index.htm"></iframe>
                 </div>
@@ -64,27 +64,27 @@ Vue.component("Edificio", {
             recorrido: false,
             items: [
                 {
-                    src: 'img/edificio/terraza.jpg',
+                    src: 'img/edificio/Terraza.webp',
                     titulo: 'Terraza'
                 },
                 {
-                    src: 'img/edificio/Corredor.jpg',
+                    src: 'img/edificio/CorredorVerde.webp',
                     titulo: 'Corredor Verde'
                 },
                 {
-                    src: 'img/edificio/Sala.jpg',
+                    src: 'img/edificio/SalaComun.webp',
                     titulo: 'Sala común'
                 },
                 {
-                    src: 'img/edificio/Lavanderia.jpg',
+                    src: 'img/edificio/Lavanderia.webp',
                     titulo: 'Lavanderia'
                 },
                 {
-                    src: 'img/edificio/Vigilancia.jpg',
+                    src: 'img/edificio/Vigilancia.webp',
                     titulo: 'Vigilancia 24 horas'
                 },
                 {
-                    src: 'img/edificio/Parqueadero.jpg',
+                    src: 'img/edificio/Parqueadero.webp',
                     titulo: 'Parqueadero'
                 }
             ],

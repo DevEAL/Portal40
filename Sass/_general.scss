@@ -77,6 +77,26 @@ p { color: $color-gray-dark; }
   }
   /* @include mq(max,mg) { display: none; } */
 }
+#map-building {
+  iframe.recorrido {
+    width: 310px;
+    height: 500px;
+    @include mq(min,500px) {
+      width: 480px;
+    }
+    @include mq(min,800px) {
+      width: 780px;
+    }
+    @include mq(min,1360px) {
+      width: 1250px;
+      height: 600px;
+    }
+    @include mq(min,1820px) {
+        width: 1740px;
+        height: 700px;
+    }
+  }
+}
 
 @media (max-width: 564px) {
   .divisor {

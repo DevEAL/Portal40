@@ -7,7 +7,7 @@ Vue.component("Conoce", {
           <button @click="estateRoute360" class="btn-route360 texto-hat">
           <h5 class="white--text"><span>RECORRIDO VIRTUAL 360º</span></br> CONOCE EL EDIFICIO</h5>
           </button>
-          <div>
+          <div id="map-building" class="mt-5">
             <iframe v-if="recorrido" class="recorrido" frameborder="0" scrolling="auto" marginheight="0"
             marginwidth="0" src="360/edificio/index.htm"></iframe>
           </div>

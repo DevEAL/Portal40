@@ -11,8 +11,8 @@ Vue.component("Inmuebles", {
             <v-col cols="12" class="text-center white--text texto-opera fondo-Azul">
                 <v-container>
                     <h2 class="texto-hat title-state mb-6">INMUEBLES</h2>
-                    <p class="text-state white--text">3 tipo de vivienda que son de 1, 2 o 3 alcobas, desde 32m<sup>2</sup> hasta 63,92m<sup>2</sup> de área contruida.</p>
-                    <p class="text-state white--text">Inmuebles desde $180'000.000.</p>
+                    <p class="text-state white--text">3 tipologías de 1, 2 y 3 habitaciones, desde 32,04 hasta 63,92 m<sup>2</sup> construidos</p>
+                    <p class="text-state white--text">Inmuebles desde $173'000.000.</p>
                     <p class="text-state white--text">El edificio cuenta con zonas comunes para beneficio de sus habitantes.</p>
                     <p class="text-state white--text">Diseño arquitectónico moderno con espacios versátiles y dinámicos.</p>
                 </v-container>
@@ -60,7 +60,7 @@ Vue.component("Inmuebles", {
                             <h5 class="white--text"><span>RECORRIDO VIRTUAL 360º</span></br> INMUEBLE 1 HABITACIÓN</h5>
                         </button>
                         
-                        <div>
+                        <div id="map-building" class="mt-5">
                             <iframe v-if="estadoUnaHabitaciones" class="recorrido" frameborder="0" scrolling="auto" marginheight="0"
                             marginwidth="0" src="360/1Habitacion/index.htm"></iframe>
                         </div>
@@ -151,7 +151,7 @@ Vue.component("Inmuebles", {
                         <button @click="CambiarEstadoTresHabitaciones" class="btn-route360 texto-hat">
                             <h5 class="white--text"><span>RECORRIDO VIRTUAL 360º</span></br> INMUEBLE 3 HABITACIONES</h5>
                         </button>
-                        <div>
+                        <div id="map-building" class="mt-5">
                             <iframe v-if="estadoTresHabitaciones" class="recorrido" frameborder="0" scrolling="auto" marginheight="0"
                             marginwidth="0" src="360/3Habitaciones/index.htm"></iframe>
                         </div>

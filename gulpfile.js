@@ -30,7 +30,6 @@ gulp.task('scss-task', () => {
             sourceComment: true
         })).
         pipe(autoprefixer()).
-        pipe(sourcemaps.identityMap()).
         pipe(concat('style.css')).
         pipe(reload({stream:true})).
         pipe(sourcemaps.write('./')).

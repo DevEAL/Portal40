@@ -21,6 +21,7 @@ Vue.component("Carousels", {
         ></v-carousel-item>
       </v-carousel>
     </v-container>
+    <v-container fluid class="py-1 white"></v-container>
   </div>
   `,
   data() {

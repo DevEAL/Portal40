@@ -26,8 +26,10 @@ Vue.component("Modelo", {
                         </v-col>
                     </v-row>
                 </v-container>
-                <p class="text-left color-texto-azul margenm letra-Texto-resena">* Este ingreso depende sí al momento de entrega se encuentra arrendado.</p>
-                <p class="text-left color-texto-rojo margenm letra-Texto-resena">* Los ingresos productos de los diferentes negocios son recaudados y administrados por Administración.</p>
+                <div class="size_txt_marketSpace">
+                    <p class="text-left color-texto-azul margenm letra-Texto-resena">* Este ingreso depende sí al momento de entrega se encuentra arrendado.</p>
+                    <p class="text-left color-texto-rojo margenm letra-Texto-resena">* Los ingresos productores de diferentes negocios de explotación de zonas comunes, son recaudados y controlados por la administración.</p>
+                </div>
             </v-col>
             <v-col cols="12" class="black text-center white--text">
                 <v-container>
